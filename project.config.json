@@ -39,8 +39,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.1",
-  "appid": "wx0d648dab0d861b05",
-  "projectname": "wxapp-common",
+  "appid": "wx41ac179b63e20b9e",
+  "projectname": "wxapp-cck",
   "debugOptions": {
     "hidedInDevtools": []
   },
