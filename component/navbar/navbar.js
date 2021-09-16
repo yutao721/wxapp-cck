@@ -28,7 +28,6 @@ Component({
 
   attached() {
     let currentPages = getCurrentPages();
-    console.log(app.$system.statusBarHeight);
     this.setData({
       leftArrow: currentPages.length > 1
     })
