@@ -56,6 +56,7 @@ Page({
     })
   },
   onLoad(options) {
+    app.changeTabbar();
     this.getList()
   },
 

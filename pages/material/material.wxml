@@ -1,0 +1,4 @@
+<view class="wrap">
+  <view>资料</view>
+  <tabbar active="{{currentPage}}"></tabbar>
+</view>

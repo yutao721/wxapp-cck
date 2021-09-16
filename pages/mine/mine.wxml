@@ -1,0 +1,4 @@
+<view class="wrap">
+  <tabbar active="{{currentPage}}"></tabbar>
+  <view>我的</view>
+</view>

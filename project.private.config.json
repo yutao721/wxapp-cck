@@ -17,6 +17,12 @@
           "pathName": "pages/detail/detail",
           "query": "id=191",
           "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
         }
       ]
     }

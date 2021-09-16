@@ -1,5 +1,6 @@
+<navbar></navbar>
 <view class="wrap">
-  <view class="header">
+  <view class="header" style="top: {{navbarH}}px">
     <view class="search-wrap">
       <view class="search">
         <view class="search-icon" bindtap="submit"></view>
@@ -7,10 +8,10 @@
       </view>
     </view>
     <view class="status-items">
-      <view class="status-item {{item.value == status ? 'active' : ''}}" wx:for="{{items}}" data-value="{{item.value}}" bindtap="handleStatus" wx:key="unique">{{item.label}}</view>
+      <view class="status-item {{item.value == status ? 'active' : ''}}" wx:for="{{items}}" data-value="{{item.value}}" bindtap="handleStatus" wx:key="unique">{{item.label}}
+      </view>
     </view>
   </view>
-
   <view class="lists">
     <navigator class="list" url="/pages/detail/detail?id={{item.id}}" wx:for="{{list}}" wx:key="unique">
       <image class="list-avatar" src="/images/share.png"></image>
@@ -25,6 +26,6 @@
         </view>
       </view>
     </navigator>
-
   </view>
 </view>
+<tabbar active="{{currentPage}}"></tabbar>

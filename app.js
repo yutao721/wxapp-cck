@@ -1,5 +1,4 @@
 import { IMGPATH } from './config/config';
-import { Log } from './lib/log';
 import { Interaction } from './utils/interaction';
 import { promiseWXApi } from './utils/index';
 import Event from './lib/eventBus';
@@ -38,12 +37,6 @@ App({
     deviceInfo: {},
     tempParams: {},
     wxp: {}, //全局微信api-Promise化管理器
-    tabBar: {
-      backgroundColor: '#ffffff',
-      color: '#C5C5C5',
-      selectedColor: '#FDD040',
-      list: []
-    },
     userInfo: null
   },
 
@@ -62,16 +55,11 @@ App({
    * @date 2020-12-31
    */
   changeTabbar() {
-    let tabbar = this.globalData.tabBar;
     let currentPages = getCurrentPages();
     let _this = currentPages[currentPages.length - 1];
     let pagePath = _this.route;
-    pagePath.indexOf('/') != 0 && (pagePath = '/' + pagePath);
-    for (let i in tabbar.list) {
-      tabbar.list[i].selected = false;
-      tabbar.list[i].pagePath == pagePath && (tabbar.list[i].selected = true);
-    }
-    _this.setData({ tabbar });
+    pagePath.indexOf('/') != 0 && ( pagePath = '/' + pagePath );
+    _this.setData({ currentPage: pagePath });
   }
 
 });

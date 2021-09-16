@@ -1,0 +1,5 @@
+<view class="wrap">
+  <tabbar active="{{currentPage}}"></tabbar>
+  <view>题库</view>
+  <van-button type="primary">主要按钮</van-button>
+</view>

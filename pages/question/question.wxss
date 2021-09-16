@@ -1,0 +1,4 @@
+.van-button--primary {
+  font-size: 20px !important;
+  background-color: pink !important;
+}

@@ -1,0 +1,4 @@
+<viewq class="wrap">
+  <tabbar active="{{currentPage}}"></tabbar>
+  <view>员工</view>
+</viewq>

@@ -1,0 +1,8 @@
+<van-nav-bar title="{{title}}"
+             left-text=""
+             left-arrow="{{leftArrow}}"
+             border="{{border}}"
+             fixed="{{fixed}}"
+             placeholder="{{placeholder}}"
+             bind:click-left="onClickLeft"
+             bind:click-right="onClickRight"/>

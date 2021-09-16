@@ -1,6 +1,17 @@
 page {
   font-family: 'PingFangSC-Regular', 'Microsoft YaHei';
   background: #f4f4f4;
+
+
+  --button-border-radius: 10px;
+  --button-default-color: #f2f3f5;
+  --toast-max-width: 100px;
+  --toast-background-color: pink;
+
+  /* NavBar */
+  --nav-bar-arrow-size: 20px;
+  --nav-bar-icon-color: #000;
+  --nav-bar-text-color: #000;
 }
 
 image {
@@ -37,3 +48,8 @@ button::after {
   align-items: center;
   flex: 1;
 }
+
+
+/*===========================*/
+
+
