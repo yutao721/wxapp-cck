@@ -1,31 +1,56 @@
-<navbar></navbar>
 <view class="wrap">
-  <view class="header" style="top: {{navbarH}}px">
-    <view class="search-wrap">
-      <view class="search">
-        <view class="search-icon" bindtap="submit"></view>
-        <input class="search-input" placeholder="搜索" placeholder-style="color:#999" bindinput="handleInput" value="{{name}}"/>
-      </view>
-    </view>
-    <view class="status-items">
-      <view class="status-item {{item.value == status ? 'active' : ''}}" wx:for="{{items}}" data-value="{{item.value}}" bindtap="handleStatus" wx:key="unique">{{item.label}}
-      </view>
+
+  <view class="swiper">
+    <swiper class="swiper" indicator-dots autoplay interval="3000" indicator-color="rgba(0,0,0,.4)" indicator-active-color="#FFF">
+      <swiper-item wx:for="{{banner}}" class="swiper-item" wx:key="unique">
+        <view class="swiper-item">
+          <image src="{{item.url}}" class="swiper-img"></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="tabs">
+    <view class="tabs-item {{item.value == activeTab ?'active' : ''}}"
+          bindtap="handleSwitchTab"
+          data-value="{{item.value}}"
+          wx:for="{{tabs}}">
+      {{item.label}}
     </view>
   </view>
+
   <view class="lists">
-    <navigator class="list" url="/pages/detail/detail?id={{item.id}}" wx:for="{{list}}" wx:key="unique">
-      <image class="list-avatar" src="/images/share.png"></image>
+
+    <navigator class="list" hover-class="none" url="/pages/detail/detail?id=1">
       <view class="list-info">
-        <view class="list-info-name">{{item.title}}</view>
-        <view class="list-info-time">
-          <view class="time">{{item.time}}</view>
-          <view class="count">
-            <view class="count-icon">浏览量：</view>
-            <view class="count-text">{{item.count}}</view>
-          </view>
-        </view>
+        <view class="list-title">省发改委来楚晟科公司开展襄阳路桥省级企业技术中心认定现场考察</view>
+        <view class="list-sub">2020.02.06 12:20 235人浏览</view>
+      </view>
+      <view class="list-img"></view>
+    </navigator>
+
+    <navigator class="list" hover-class="none" url="/pages/detail/detail?id=1">
+      <view class="list-info">
+        <view class="list-title">省发改委来楚晟科公司开展襄阳路桥省级企业技术中心认定现场考察</view>
+        <view class="list-sub">2020.02.06 12:20 235人浏览</view>
       </view>
     </navigator>
+
+    <navigator class="list" hover-class="none" url="/pages/detail/detail?id=1">
+      <view class="list-info">
+        <view class="list-title">省发改委来楚晟科公司开展襄阳路桥省级企业技术中心认定现场考察</view>
+        <view class="list-sub">2020.02.06 12:20 235人浏览</view>
+      </view>
+    </navigator>
+
+    <navigator class="list" hover-class="none" url="/pages/detail/detail?id=1">
+      <view class="list-info">
+        <view class="list-title">省发改委来楚晟科公司开展襄阳路桥省级企业技术中心认定现场考察</view>
+        <view class="list-sub">2020.02.06 12:20 235人浏览</view>
+      </view>
+      <view class="list-img"></view>
+    </navigator>
+
   </view>
 </view>
 <tabbar active="{{currentPage}}"></tabbar>

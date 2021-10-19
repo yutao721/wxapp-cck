@@ -1,18 +1,5 @@
 <view class="wrap">
 
-  <view class="header">
-    <view class="search-wrap">
-      <view class="icon"></view>
-      <view class="input">
-        <input class="input-inner" placeholder="搜索文档/视频"/>
-      </view>
-    </view>
-    <navigator class="history" hover-class="none" url="/pages/history/history">
-      <view class="history-icon"></view>
-      <view class="history-text">学习记录</view>
-    </navigator>
-  </view>
-
   <view class="tabs">
     <view class="tabs-item {{activeTab == item.value ? 'active' : ''}}"
           data-value="{{item.value}}"
@@ -80,5 +67,4 @@
     </view>
   </view>
 
-  <tabbar active="{{currentPage}}"></tabbar>
 </view>

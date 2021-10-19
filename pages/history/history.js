@@ -19,6 +19,6 @@ Page({
   },
 
   onLoad() {
-    app.changeTabbar();
+
   }
 });

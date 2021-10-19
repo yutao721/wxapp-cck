@@ -1,0 +1,159 @@
+page {
+  background-color: #fff;
+}
+
+.wrap {
+  background-color: #fff;
+}
+
+.header {
+  background-color: #26339B;
+  height: 548rpx;
+  position: relative;
+}
+
+.tabs {
+  height: 80rpx;
+  background: rgba(0, 15, 71, .8);
+  opacity: .8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.tabs-item {
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+
+.tabs-item.active {
+  font-weight: bold;
+  position: relative;
+}
+
+.tabs-item.active::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 32rpx;
+  height: 6rpx;
+  background: #FFFFFF;
+  border-radius: 3rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 42rpx;
+}
+
+.lists {
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.list-hd {
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.rank {
+  width: 72rpx;
+}
+
+.w256 {
+  width: 256rpx;
+}
+
+.w238 {
+  width: 238rpx;
+}
+
+.w400 {
+  width: 360rpx;
+}
+
+.user {
+  margin-left: 50rpx;
+}
+
+.total {
+  width: 112rpx;
+  margin-left: 50rpx;
+}
+
+.list-name {
+  width: 193rpx;
+  margin: 0 0 0 10rpx;
+}
+
+.right-num {
+  width: 84rpx;
+  margin-left: auto;
+  text-align: right;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+}
+
+.rank-bd {
+  text-align: center;
+  font-size: 32rpx;
+  font-family: Barlow-BoldItalic, Barlow;
+  color: #666666;
+}
+
+.user-bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 72rpx;
+  height: 72rpx;
+  background: #C1C1C1;
+  border: 2rpx solid #FFD233;
+  box-sizing: border-box;
+  border-radius: 100%;
+  flex-shrink: 0;
+  margin-right: 16rpx;
+}
+
+.name {
+  font-size: 28rpx;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-name-bd {
+  width: 193rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.total-bd {
+  font-size: 36rpx;
+  color: #999999;
+  font-family: Barlow-BoldItalic, Barlow;
+}
+
+.right-num-bd {
+  font-size: 36rpx;
+  font-family: Barlow-BoldItalic, Barlow;
+  color: #1AC97C;
+  text-align: right;
+}

@@ -1,0 +1,98 @@
+page {
+  background: #FFF;
+}
+
+.header {
+  width: 694rpx;
+  height: 400rpx;
+  margin: 0 auto;
+  background-color: orangered;
+  position: relative;
+  border-radius: 16rpx;
+}
+
+.current {
+  padding: 80rpx 30rpx 0;
+}
+
+.current-name {
+  font-size: 32rpx;
+  color: #FFF0D6;
+}
+
+.current-score {
+  font-size: 84rpx;
+  color: #FFF;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  margin-top: 10rpx;
+}
+
+.info {
+  width: 694rpx;
+  height: 86rpx;
+  background: #FF7700;
+  border-radius: 0 0 16rpx 16rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  color: #FFEBC7;
+  font-size: 32rpx;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+
+.lists-wrap {
+  padding: 0 28rpx;
+  background: #FFF;
+}
+
+.lists-title {
+  display: flex;
+  align-items: center;
+  padding: 32rpx 0;
+}
+
+.lists-title-icon {
+  width: 40rpx;
+  height: 40rpx;
+  background-color: red;
+  margin-right: 18rpx;
+}
+
+.lists-title-text {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.list {
+  height: 138rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.list-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-info-name {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.list-info-time {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+
+.list-score {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #E90012;
+  font-family: DINAlternate-Bold, DINAlternate;
+}

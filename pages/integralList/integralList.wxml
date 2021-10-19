@@ -1,0 +1,32 @@
+<view class="wrap">
+  <view class="header">
+    <view class="current">
+      <view class="current-name">当前积分</view>
+      <view class="current-score">1309</view>
+    </view>
+    <view class="info">累计积分：1300</view>
+  </view>
+
+  <view class="lists-wrap">
+    <view class="lists-title">
+      <view class="lists-title-icon"></view>
+      <view class="lists-title-text">做任务赚金币</view>
+    </view>
+    <view class="lists">
+      <view class="list">
+        <view class="list-info">
+          <view class="list-info-name">签到</view>
+          <view class="list-info-time">2021.02.24 12:12:34</view>
+        </view>
+        <view class="list-score"> +10</view>
+      </view>
+      <view class="list">
+        <view class="list-info">
+          <view class="list-info-name">签到</view>
+          <view class="list-info-time">2021.02.24 12:12:34</view>
+        </view>
+        <view class="list-score"> +10</view>
+      </view>
+    </view>
+  </view>
+</view>

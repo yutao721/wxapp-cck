@@ -56,7 +56,7 @@ Component({
 
     // 切换
     onChangeTabbar(e) {
-      app.$IA.userTap();
+      // app.$IA.userTap();
       wx.switchTab({ url: e.detail });
     }
   }

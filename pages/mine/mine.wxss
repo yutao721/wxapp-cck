@@ -1,0 +1,155 @@
+.wrap {
+  background: #FFF;
+}
+
+.header {
+  width: 100%;
+  height: 552rpx;
+  background: linear-gradient(0, #FF653B 0%, #F7382D 100%);
+  position: relative;
+}
+
+.block {
+  width: 694rpx;
+  /*height: 330rpx;*/
+  background: #FFFFFF;
+  box-shadow: 0 4rpx 16rpx 0 rgba(82, 82, 82, 0.08);
+  border-radius: 16rpx;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 40rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.info-wrap, .info-inner {
+  display: flex;
+  align-items: center;
+}
+
+.info-wrap {
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 132rpx;
+  height: 132rpx;
+  border-radius: 100%;
+  background: red;
+  margin-right: 24rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 44rpx;
+  font-weight: 600;
+  color: #222222;
+}
+
+.work {
+  font-size: 30rpx;
+  color: #999999;
+  margin-top: 10rpx;
+}
+
+.edit {
+  width: 32rpx;
+  height: 32rpx;
+  background-color: green;
+}
+
+.company-wrap {
+  width: 630rpx;
+  height: 86rpx;
+  background: linear-gradient(265deg, #FFFCF8 0%, #FFF1E3 100%);
+  border-radius: 16rpx;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-top: 32rpx;
+}
+
+.logo {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100%;
+  background-color: violet;
+  flex-shrink: 0;
+}
+
+.company-tips {
+  font-size: 30rpx;
+  color: #999999;
+  margin: 0 15rpx;
+  flex-shrink: 0;
+}
+
+.company-name {
+  font-size: 30rpx;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.container {
+  position: relative;
+  top: -126rpx;
+  background: #FFFFFF;
+  height: calc(100vh - 600rpx);
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.lists-wrap {
+  padding-top: 148rpx;
+}
+
+.lists {
+  width: 694rpx;
+  background: #FFFFFF;
+  box-shadow: 0 4rpx 16rpx 0 rgba(82, 82, 82, 0.08);
+  border-radius: 20rpx;
+  margin: 0 auto;
+}
+
+.list {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #EAEAEA;
+  padding: 0 34rpx;
+}
+
+.list:last-of-type {
+  border: none;
+}
+
+.list-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+  background-color: khaki;
+}
+
+.icon-right {
+  width: 16rpx;
+  height: 26rpx;
+  background: #666666;
+  margin-left: auto;
+}
+
+.list-txt {
+  font-size: 30rpx;
+  color: #333;
+}

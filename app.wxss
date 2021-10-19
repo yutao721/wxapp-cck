@@ -1,7 +1,6 @@
 page {
-  font-family: 'PingFangSC-Regular', 'Microsoft YaHei';
   background: #f4f4f4;
-
+  font-family: PingFangSC-Regular, PingFang SC;
 
   --button-border-radius: 10px;
   --button-default-color: #f2f3f5;
@@ -10,8 +9,8 @@ page {
 
   /* NavBar */
   --nav-bar-arrow-size: 20px;
-  --nav-bar-icon-color: #000;
-  --nav-bar-text-color: #000;
+  --nav-bar-icon-color: #FFF;
+  --nav-bar-text-color: #FFF;
 }
 
 image {
@@ -36,6 +35,11 @@ button::after {
   right: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+}
+
+.flex-s {
+  display: flex;
+  justify-content: center;
 }
 
 .flex-box {

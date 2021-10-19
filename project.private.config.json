@@ -23,6 +23,36 @@
           "pathName": "pages/question/question",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "积分列表",
+          "pathName": "pages/integralList/integralList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的数据",
+          "pathName": "pages/mineDetail/mineDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "排名",
+          "pathName": "pages/rank/rank",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "资料",
+          "pathName": "pages/material/material",
+          "query": "",
+          "scene": null
         }
       ]
     }

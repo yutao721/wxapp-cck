@@ -1,4 +1,9 @@
 
-.asd {
+.navbar {
   background: transparent !important;
+}
+
+.navbar-title {
+  color: #FFF;
+  font-size: 34rpx;
 }

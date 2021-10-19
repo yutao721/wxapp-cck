@@ -5,7 +5,11 @@
     "pages/mine/mine",
     "pages/material/material",
     "pages/staff/staff",
-    "pages/question/question"
+    "pages/question/question",
+    "pages/integralList/integralList",
+    "pages/mineDetail/mineDetail",
+    "pages/rank/rank",
+    "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,54 @@
+<view class="wrap">
+  <navbar title="高管驾驶舱" placeholder="{{false}}" border="{{false}}"></navbar>
+  <view class="header">
+    <view class="tabs">
+      <view class="tabs-item {{activeTab == item.value ? 'active' : ''}}"
+            data-value="{{item.value}}"
+            bindtap="handleSwitchTab"
+            wx:key="unique"
+            wx:for="{{tabs}}">{{item.label}}
+      </view>
+    </view>
+  </view>
+
+  <view class="lists">
+    <view class="list-hd">
+      <view class="rank">排名</view>
+      <view class="user {{(activeTab == 2 || activeTab == 4) ? 'w400': activeTab == 3 ?  'w238' : 'w256'}}">用户</view>
+      <view class="total" wx:if="{{activeTab == 1}}">答题总数</view>
+      <view class="list-name" wx:if="{{activeTab == 3}}">考试名称</view>
+      <view class="right-num" wx:if="{{activeTab == 1}}">对题数</view>
+      <view class="right-num" wx:if="{{activeTab == 2}}">闯关数</view>
+      <view class="right-num" wx:if="{{activeTab == 3}}">分数</view>
+      <view class="right-num" wx:if="{{activeTab == 4}}">积分</view>
+    </view>
+    <view class="list-bd">
+      <view class="list">
+        <view class="rank rank-bd">1</view>
+        <view class="user user-bd {{(activeTab == 2 || activeTab == 4) ? 'w400': activeTab == 3 ?  'w238' : 'w256'}}">
+          <view class="avatar"></view>
+          <view class="name">张小花就是张小花就张小花就是张小花就张小花就是张小花就</view>
+        </view>
+        <view class="total total-bd" wx:if="{{activeTab == 1}}">489</view>
+        <view class="list-name list-name-bd" wx:if="{{activeTab == 3}}">考试名称考试名称考试名称考试名称</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 1}}">324</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 2}}">324</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 3}}">324</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 4}}">324</view>
+      </view>
+      <view class="list">
+        <view class="rank rank-bd">1</view>
+        <view class="user user-bd {{(activeTab == 2 || activeTab == 4) ? 'w400': activeTab == 3 ?  'w238' : 'w256'}}">
+          <view class="avatar"></view>
+          <view class="name">张小花就是张小花就张小花就是张小花就张小花就是张小花就</view>
+        </view>
+        <view class="total total-bd" wx:if="{{activeTab == 1}}">489</view>
+        <view class="list-name list-name-bd" wx:if="{{activeTab == 3}}">考试名称考试名称考试名称考试名称</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 1}}">324</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 2}}">324</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 3}}">324</view>
+        <view class="right-num right-num-bd" wx:if="{{activeTab == 4}}">324</view>
+      </view>
+    </view>
+  </view>
+</view>

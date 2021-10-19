@@ -20,7 +20,43 @@ Page({
     ],
     status: '',
     keyword: '',
-    list: []
+    list: [],
+    banner: [
+      {
+        url: 'https://sgs-test.oss-cn-hangzhou.aliyuncs.com/uploads/banner/202008/5f334e64c5f98.png'
+      },
+      {
+        url: 'https://sgs-test.oss-cn-hangzhou.aliyuncs.com/uploads/banner/202101/6000f944d56ac.jpg'
+      },
+
+      {
+        url: 'https://sgs-test.oss-cn-hangzhou.aliyuncs.com/uploads/banner/202008/5f334e64c5f98.png'
+      }
+    ],
+    tabs: [
+      {
+        label: '企业动态',
+        value: 1
+      },
+      {
+        label: '法律法规',
+        value: 2
+      },
+      {
+        label: '安全手册',
+        value: 3
+      },
+      {
+        label: '行业新闻',
+        value: 4
+      }
+    ],
+    activeTab: 1
+  },
+
+  handleSwitchTab(e) {
+    let { value } = e.currentTarget.dataset;
+    this.setData({ activeTab: value })
   },
 
   handleInput(v) {

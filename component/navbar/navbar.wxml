@@ -3,6 +3,8 @@
              left-arrow="{{leftArrow}}"
              border="{{border}}"
              fixed="{{fixed}}"
+             custom-class="navbar"
+             title-class="navbar-title"
              placeholder="{{placeholder}}"
              bind:click-left="onClickLeft"
              bind:click-right="onClickRight"/>

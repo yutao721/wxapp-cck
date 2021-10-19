@@ -1,4 +1,55 @@
 <view class="wrap">
+  <navbar title="我的" placeholder="{{false}}" border="{{false}}"></navbar>
   <tabbar active="{{currentPage}}"></tabbar>
-  <view>我的</view>
+  <view class="header">
+    <view class="block">
+
+      <view class="info-wrap">
+        <view class="info-inner">
+          <view class="avatar"></view>
+          <view class="info">
+            <view class="name">开心就好</view>
+            <view class="work">市场部总监</view>
+          </view>
+        </view>
+        <view class="edit"></view>
+      </view>
+
+      <view class="company-wrap">
+        <view class="logo"></view>
+        <view class="company-tips">所属公司</view>
+        <view class="company-name">湖北楚晟科路桥技术开发有湖北楚晟科路桥技术开发有</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="container">
+    <view class="lists-wrap">
+      <view class="lists">
+        <navigator class="list" hover-class="none" url="/pages/integralList/integralList">
+          <view class="list-icon"></view>
+          <view class="list-txt">我的积分</view>
+          <view class="icon-right"></view>
+        </navigator>
+        <navigator class="list" hover-class="none" url="/pages/rank/rank">
+          <view class="list-icon"></view>
+          <view class="list-txt">高管驾驶舱</view>
+          <view class="icon-right"></view>
+        </navigator>
+        <view class="list">
+          <view class="list-icon"></view>
+          <view class="list-txt">我的收藏</view>
+          <view class="icon-right"></view>
+        </view>
+        <navigator class="list" hover-class="none" url="/pages/mineDetail/mineDetail">
+          <view class="list-icon"></view>
+          <view class="list-txt">我的数据</view>
+          <view class="icon-right"></view>
+        </navigator>
+      </view>
+    </view>
+
+  </view>
+
 </view>

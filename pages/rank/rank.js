@@ -1,25 +1,24 @@
-const app = getApp();
 Page({
   data: {
     tabs: [
       {
-        label: '企业动态',
+        label: '答题数',
         value: 1
       },
       {
-        label: '法律法规',
+        label: '闯关数',
         value: 2
       },
       {
-        label: '安全手册',
+        label: '考试概况',
         value: 3
       },
       {
-        label: '行业新闻',
+        label: '积分',
         value: 4
-      }
+      },
     ],
-    activeTab: 1
+    activeTab:1
   },
 
   handleSwitchTab(e) {
@@ -27,7 +26,7 @@ Page({
     this.setData({ activeTab: value })
   },
 
-  onLoad() {
-    app.changeTabbar();
+  onLoad: function (options) {
+
   }
 });

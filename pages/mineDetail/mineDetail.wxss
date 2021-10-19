@@ -1,0 +1,264 @@
+.wrap {
+  background: #F8F8F8;
+}
+
+.header {
+  width: 100%;
+  height: 576rpx;
+  background: linear-gradient(0, #FF653B 0%, #F7382D 100%);
+  position: relative;
+}
+
+.block {
+  width: 694rpx;
+  background: #FFFFFF;
+  box-shadow: 0 4rpx 16rpx 0 rgba(82, 82, 82, 0.08);
+  border-radius: 16rpx;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 40rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.info-wrap, .info-inner {
+  display: flex;
+  align-items: center;
+}
+
+.info-wrap {
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 132rpx;
+  height: 132rpx;
+  border-radius: 100%;
+  background: red;
+  margin-right: 24rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 44rpx;
+  font-weight: 600;
+  color: #222222;
+}
+
+.work {
+  font-size: 30rpx;
+  color: #999999;
+  margin-top: 10rpx;
+}
+
+.edit {
+  width: 202rpx;
+  height: 54rpx;
+  background-color: green;
+  align-self: flex-start;
+}
+
+.info-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48rpx 0 8rpx;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-list-num {
+  font-size: 48rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #000000;
+}
+
+.info-list-text {
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 15rpx;
+}
+
+.container {
+  position: relative;
+  top: -126rpx;
+  background: #F8F8F8;
+  height: calc(100vh - 600rpx);
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.lists-wrap {
+  padding-top: 148rpx;
+}
+
+.integral {
+  width: 694rpx;
+  height: 132rpx;
+  background: linear-gradient(270deg, #FFEECD 0%, #FFEBD2 100%);
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10rpx auto;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+
+.integral-info-current {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #FF7829;
+}
+
+.integral-info-history {
+  font-size: 24rpx;
+  color: #FF833A;
+  margin-top: 10rpx;
+}
+
+.integral-detail {
+  display: flex;
+  align-items: center;
+}
+
+.integral-detail-text {
+  font-size: 28rpx;
+  color: #222222;
+}
+
+.integral-detail-icon {
+  width: 16rpx;
+  height: 20rpx;
+  background-color: red;
+  margin-left: 10rpx;
+}
+
+.list-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #000000;
+  margin: 22rpx 0 18rpx 0;
+  padding: 0 28rpx;
+}
+
+.lists {
+
+}
+
+.list {
+  width: 694rpx;
+  margin: 0 auto 32rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+.list-hd {
+  height: 92rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-hd-score {
+  font-size: 32rpx;
+  color: #222;
+  font-weight: 500;
+}
+
+.list-hd-time {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.list:last-of-type {
+  border: none;
+}
+
+.list-bd {
+  display: flex;
+  justify-content: space-between;
+  height: 172rpx;
+  padding: 22rpx 0;
+  border-top: 1rpx solid #EAEAEA;
+}
+
+.list-bd-img {
+  width: 172rpx;
+  height: 172rpx;
+  background: #FCA0A0;
+  border-radius: 16rpx;
+  margin-right: 24rpx;
+}
+
+.list-bd-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-bd-title {
+  font-size: 32rpx;
+  color: #222222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-top: 8rpx;
+}
+
+.list-bd-tag {
+  font-size: 26rpx;
+  color: #AAAAAA;
+  margin-top: 8rpx;
+}
+
+.list-bd-detail {
+  display: flex;
+  align-items: center;
+  margin-top: 28rpx;
+}
+
+.list-detail-num {
+  font-size: 28rpx;
+  color: #222;
+}
+
+.list-detail-total {
+  font-size: 26rpx;
+  color: #999;
+  margin-left: 8rpx;
+}
+
+.list-detail-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.list-detail-link-text {
+  font-size: 28rpx;
+  color: #E90012;
+}
+
+.list-detail-link-icon {
+  width: 26rpx;
+  height: 26rpx;
+  background-color: red;
+  margin-left: 5rpx;
+}
