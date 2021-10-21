@@ -1,0 +1,149 @@
+<view class="wrap">
+  <view class="tabbar-wrap">
+    <scroll-view scroll-x class="tabbar-scroll" scroll-with-animation :scroll-left="scrollLeft">
+      <view class="tabbar {{ activeTab == item.value ? 'active' : '' }}" wx:for="{{tabbarList}}"
+            wx:key="unique"
+            data-value="{{item.value}}"
+            bindtap="handleChooseTab">{{item.text}}
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="lists">
+    <view class="list">
+      <view class="list-hd">
+        <view class="list-hd-score green">已通关</view>
+        <view class="list-hd-time">2020.02.06 12:20</view>
+      </view>
+      <view class="list-bd">
+        <view class="list-bd-img"></view>
+        <view class="list-bd-info">
+          <view class="list-bd-title">穿越今古的法律智慧中国人民…</view>
+          <view class="list-bd-tag">#考试#</view>
+          <view class="list-bd-detail">
+            <view class="list-detail-num">答对4题</view>
+            <view class="list-detail-total">共12道题</view>
+            <view class="list-detail-link">
+              <view class="list-detail-link-text">查看解析</view>
+              <view class="list-detail-link-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-hd">
+        <view class="list-hd-score gray">未通关</view>
+        <view class="list-hd-time">2020.02.06 12:20</view>
+      </view>
+      <view class="list-bd">
+        <view class="list-bd-img"></view>
+        <view class="list-bd-info">
+          <view class="list-bd-title">穿越今古的法律智慧中国人民…</view>
+          <view class="list-bd-tag">#考试#</view>
+          <view class="list-bd-detail">
+            <view class="list-detail-num">答对4题</view>
+            <view class="list-detail-total">共12道题</view>
+            <view class="list-detail-link">
+              <view class="list-detail-link-text">查看解析</view>
+              <view class="list-detail-link-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-hd">
+        <view class="list-hd-score">90分</view>
+        <view class="list-hd-time">2020.02.06 12:20</view>
+      </view>
+      <view class="list-bd">
+        <view class="list-bd-img"></view>
+        <view class="list-bd-info">
+          <view class="list-bd-title">穿越今古的法律智慧中国人民…</view>
+          <view class="list-bd-tag">#考试#</view>
+          <view class="list-bd-detail">
+            <view class="list-detail-num">答对4题</view>
+            <view class="list-detail-total">共12道题</view>
+            <view class="list-detail-link">
+              <view class="list-detail-link-text">查看解析</view>
+              <view class="list-detail-link-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-hd">
+        <view class="list-hd-score">
+          <view class="green">胜利啦</view>
+          <view class="pk-tips">发起pk 对手：张小花张小花张小</view>
+        </view>
+        <view class="list-hd-time">2020.02.06 12:20</view>
+      </view>
+      <view class="list-bd">
+        <view class="list-bd-img"></view>
+        <view class="list-bd-info">
+          <view class="list-bd-title">穿越今古的法律智慧中国人民…</view>
+          <view class="list-bd-tag">#考试#</view>
+          <view class="list-bd-detail">
+            <view class="list-detail-num">答对4题</view>
+            <view class="list-detail-total">共12道题</view>
+            <view class="list-detail-link">
+              <view class="list-detail-link-text">查看解析</view>
+              <view class="list-detail-link-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-hd">
+        <view class="list-hd-score">
+          <view class="gray">失败啦</view>
+          <view class="pk-tips">发起pk 对手：张小花张小花张小</view>
+        </view>
+        <view class="list-hd-time">2020.02.06 12:20</view>
+      </view>
+      <view class="list-bd">
+        <view class="list-bd-img"></view>
+        <view class="list-bd-info">
+          <view class="list-bd-title">穿越今古的法律智慧中国人民…</view>
+          <view class="list-bd-tag">#考试#</view>
+          <view class="list-bd-detail">
+            <view class="list-detail-num">答对4题</view>
+            <view class="list-detail-total">共12道题</view>
+            <view class="list-detail-link">
+              <view class="list-detail-link-text">查看解析</view>
+              <view class="list-detail-link-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-hd">
+        <view class="list-hd-score">
+          <view class="gray">正确率</view>
+          <text class="right-pre">80%</text>
+        </view>
+        <view class="list-hd-time">2020.02.06 12:20</view>
+      </view>
+      <view class="list-bd">
+        <view class="list-bd-img"></view>
+        <view class="list-bd-info">
+          <view class="list-bd-title">穿越今古的法律智慧中国人民…</view>
+          <view class="list-bd-tag">#考试#</view>
+          <view class="list-bd-detail">
+            <view class="list-detail-num">答对4题</view>
+            <view class="list-detail-total">共12道题</view>
+            <view class="list-detail-link">
+              <view class="list-detail-link-text">查看解析</view>
+              <view class="list-detail-link-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

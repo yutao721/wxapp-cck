@@ -53,6 +53,30 @@
           "pathName": "pages/material/material",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "题库",
+          "pathName": "pages/question/question",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "答题记录",
+          "pathName": "pages/answerList/answerList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "错题记录",
+          "pathName": "pages/errorList/errorList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "错题详情",
+          "pathName": "pages/errorDetail/errorDetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

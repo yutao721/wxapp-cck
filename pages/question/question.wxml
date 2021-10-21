@@ -1,5 +1,141 @@
 <view class="wrap">
+  <view class="header">题库</view>
+  <view class="nav-items">
+    <navigator class="nav-item" hover-class="none" url="/pages/answerList/answerList">
+      <view class="nav-item-icon"></view>
+      <view class="nav-item-text">答题记录</view>
+    </navigator>
+    <navigator class="nav-item" hover-class="none" url="/pages/errorList/errorList">
+      <view class="nav-item-icon"></view>
+      <view class="nav-item-text">错题集</view>
+    </navigator>
+    <view class="nav-item">
+      <view class="nav-item-icon"></view>
+      <view class="nav-item-text">答题排行</view>
+    </view>
+    <view class="nav-item">
+      <view class="nav-item-icon"></view>
+      <view class="nav-item-text">答题pk</view>
+    </view>
+    <view class="nav-item">
+      <view class="nav-item-icon"></view>
+      <view class="nav-item-text">题目闯关</view>
+    </view>
+    <view class="nav-item">
+      <view class="nav-item-icon"></view>
+      <view class="nav-item-text">试卷考试</view>
+    </view>
+  </view>
+  <van-sticky>
+    <view class="dropdown-wrap">
+      <van-dropdown-menu>
+        <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}"/>
+        <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}"/>
+        <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}"/>
+      </van-dropdown-menu>
+    </view>
+  </van-sticky>
+  <view class="lists">
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </view>
+  </view>
   <tabbar active="{{currentPage}}"></tabbar>
-  <view>题库</view>
-  <van-button type="primary">主要按钮</van-button>
 </view>

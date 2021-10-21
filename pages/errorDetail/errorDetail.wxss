@@ -1,0 +1,244 @@
+page {
+  background-color: #fff;
+  padding-bottom: 200rpx;
+}
+
+.title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90rpx;
+  padding: 40rpx 28rpx 0;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+
+.blocks-title {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 30rpx;
+
+}
+
+.blocks-title-icon {
+  width: 8rpx;
+  height: 28rpx;
+  background: #FF333B;
+  margin-right: 12rpx;
+}
+
+.blocks-title-text {
+  font-size: 36rpx;
+  color: #222222;
+}
+
+.num-wrap {
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  color: #999999
+}
+
+.current-nmu {
+  font-size: 48rpx;
+  color: #222222;
+}
+
+.question-wrap {
+  background: #FFF;
+  padding: 64rpx 28rpx;
+  box-sizing: border-box;
+}
+
+.question-name {
+  font-size: 36rpx;
+  color: #222222;
+}
+
+.question-lists {
+  padding-top: 10rpx;
+}
+
+.question-list {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 0 0;
+}
+
+.question-list-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border: 2rpx solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 36rpx;
+  color: #222;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.question-list-icon.right {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_answer_list_right.png);
+  color: transparent;
+}
+
+.question-list-icon.error {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_answer_list_error.png);
+  color: transparent;
+}
+
+.question-list-name {
+  font-size: 36rpx;
+  color: #222;
+}
+
+.line-block {
+  width: 750rpx;
+  height: 20rpx;
+  background: #F8F8F8;
+}
+
+
+.answer-wrap {
+  padding: 0 28rpx;
+}
+
+.answer-title {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #222222;
+  padding: 64rpx 0 40rpx;
+}
+
+.answer-title-w {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #222222;
+}
+
+.answer-content {
+  width: 694rpx;
+  background: #F8F8F8;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.answer-content-title {
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  color: #666;
+}
+
+.answer-content-title-icon {
+  width: 40rpx;
+  height: 40rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_answer_title.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.answer-content-desc {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  color: #222222;
+  line-height: 52rpx;
+  word-break: break-all;
+}
+
+.footer {
+  width: 750rpx;
+  height: 124rpx;
+  background: #FFFFFF;
+  box-shadow: 0 -2rpx 20rpx 0 rgba(113, 113, 113, 0.18);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28rpx;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 116rpx;
+}
+
+.nav-item-icon {
+  width: 44rpx;
+  height: 44rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.nav-item-icon.card {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_nav_card.png);
+}
+
+.nav-item-icon.follow {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_nav_follow.png);
+}
+
+.nav-item-icon.follow.active {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_nav_follow_active.png);
+}
+
+.nav-item-text {
+  font-size: 22rpx;
+  color: #222222;
+  margin-top: 5rpx;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 204rpx;
+  height: 84rpx;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  margin-left: 18rpx;
+}
+
+.btn-line {
+  border: 2rpx solid #FF333B;
+  color: #FF333B;
+}
+
+.btn-bg {
+  background: linear-gradient(90deg, #FF8254 0%, #FF333B 100%);
+  color: #FFF;
+}
+
+
+
+
+
+
+

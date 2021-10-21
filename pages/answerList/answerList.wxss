@@ -1,0 +1,186 @@
+/*tabbar*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+.tabbar-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 96rpx;
+  background: #FFF;
+}
+
+.tabbar-scroll {
+  white-space: nowrap;
+}
+
+.tabbar {
+  display: inline-block;
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  margin-right: 64rpx;
+}
+
+.tabbar:first-of-type {
+  padding-left: 28rpx;
+}
+
+.tabbar.active {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #222;
+}
+
+/*lists*/
+.lists {
+  padding-top: 122rpx;
+}
+
+.list {
+  width: 694rpx;
+  margin: 0 auto 32rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+.list-hd {
+  height: 92rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-hd-score {
+  font-size: 32rpx;
+  color: #222;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.green {
+  color: #00B56A;
+}
+
+.gray {
+  color: #666666;
+}
+
+.pk-tips {
+  font-size: 26rpx;
+  color: #666;
+  margin-left: 20rpx;
+  width: 272rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.right-pre {
+  margin-left: 20rpx;
+}
+
+.list-hd-time {
+  font-size: 26rpx;
+  color: #999;
+}
+
+
+.list-bd {
+  display: flex;
+}
+
+.list-img {
+  width: 172rpx;
+  height: 172rpx;
+  background: #FCA0A0;
+  border-radius: 16rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+
+.list-bd {
+  display: flex;
+  justify-content: space-between;
+  height: 172rpx;
+  padding: 22rpx 0;
+  border-top: 1rpx solid #EAEAEA;
+}
+
+.list-bd-img {
+  width: 172rpx;
+  height: 172rpx;
+  background: #FCA0A0;
+  border-radius: 16rpx;
+  margin-right: 24rpx;
+}
+
+.list-bd-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-bd-title {
+  font-size: 32rpx;
+  color: #222222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-top: 8rpx;
+}
+
+.list-bd-tag {
+  font-size: 26rpx;
+  color: #AAAAAA;
+  margin-top: 8rpx;
+}
+
+.list-bd-detail {
+  display: flex;
+  align-items: center;
+  margin-top: 28rpx;
+}
+
+.list-detail-num {
+  font-size: 28rpx;
+  color: #222;
+}
+
+.list-detail-total {
+  font-size: 26rpx;
+  color: #999;
+  margin-left: 8rpx;
+}
+
+.list-detail-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.list-detail-link-text {
+  font-size: 28rpx;
+  color: #E90012;
+}
+
+.list-detail-link-icon {
+  width: 26rpx;
+  height: 26rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_right_circle.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: 5rpx;
+}
+
+/*lists=======*/

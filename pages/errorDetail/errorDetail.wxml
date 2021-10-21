@@ -1,0 +1,65 @@
+<view class="wrap">
+
+  <view class="title-wrap">
+    <view class="blocks-title">
+      <view class="blocks-title-icon"></view>
+      <view class="blocks-title-text">单选题</view>
+    </view>
+    <view class="num-wrap">
+      <text class="current-nmu">1</text>
+      <text>/15</text>
+    </view>
+  </view>
+
+  <view class="question-wrap">
+    <view class="question-name">1.党章规定，发展党员，必须经过，坚持个别吸收的原则。</view>
+    <view class="question-lists">
+      <view class="question-list">
+        <view class="question-list-icon right">A</view>
+        <view class="question-list-name">党的支部</view>
+      </view>
+      <view class="question-list">
+        <view class="question-list-icon">A</view>
+        <view class="question-list-name">党的支部</view>
+      </view>
+      <view class="question-list">
+        <view class="question-list-icon error">A</view>
+        <view class="question-list-name">党的支部</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="line-block"></view>
+
+  <view class="answer-wrap">
+    <view class="answer-title">
+      <text class="answer-title-w">答对了！</text>
+      <text>正确答案：A</text>
+    </view>
+    <view class="answer-content">
+      <view class="answer-content-title">
+        <view class="answer-content-title-icon"></view>
+        <text class="answer-content-title-text">答案解析</text>
+      </view>
+      <view class="answer-content-desc">依据《中国共产党章程》第一章 第五条 发展党员，必须经过党的支部，坚持个别吸收的原则。</view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="nav-items">
+      <view class="nav-item">
+        <view class="nav-item-icon card"></view>
+        <view class="nav-item-text">答题卡</view>
+      </view>
+      <view class="nav-item">
+        <view class="nav-item-icon follow active"></view>
+        <view class="nav-item-text">收藏</view>
+      </view>
+    </view>
+    <view class="btn-group">
+      <view class="btn btn-line">上一题</view>
+      <view class="btn btn-bg">下一题</view>
+    </view>
+  </view>
+
+</view>

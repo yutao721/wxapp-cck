@@ -9,7 +9,10 @@
     "pages/integralList/integralList",
     "pages/mineDetail/mineDetail",
     "pages/rank/rank",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/answerList/answerList",
+    "pages/errorList/errorList",
+    "pages/errorDetail/errorDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
