@@ -1,0 +1,33 @@
+<view class="wrap">
+  <view class="header">
+    <view class="header-block">
+      <text>正确率</text>
+      <view class="num-right">80%</view>
+      <view class="num-items">
+        <view class="num-item">
+          <text>对题数：</text>
+          <text class="num-item-text">1题</text>
+        </view>
+        <view class="num-item">
+          <text>错题数：</text>
+          <text class="num-item-text">1题</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="title-wrap">
+      <view class="blocks-title">
+        <view class="blocks-title-icon"></view>
+        <view class="blocks-title-text">错题卡</view>
+      </view>
+      <view class="title-tips">已添加至“错题集”，请记得及时复习哦</view>
+    </view>
+    <view class="card-items">
+      <view class="card-item error">3</view>
+      <view class="card-item error">3</view>
+      <view class="card-item error">3</view>
+    </view>
+    <button class="btn" open-type="share">立即邀请好友</button>
+  </view>
+</view>

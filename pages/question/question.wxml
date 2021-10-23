@@ -9,22 +9,22 @@
       <view class="nav-item-icon"></view>
       <view class="nav-item-text">错题集</view>
     </navigator>
-    <view class="nav-item">
+    <navigator class="nav-item" hover-class="none" url="/pages/rankList/rankList">
       <view class="nav-item-icon"></view>
       <view class="nav-item-text">答题排行</view>
-    </view>
-    <view class="nav-item">
+    </navigator>
+    <view class="nav-item" bindtap="handleOpenPk">
       <view class="nav-item-icon"></view>
       <view class="nav-item-text">答题pk</view>
     </view>
-    <view class="nav-item">
+    <navigator class="nav-item" hover-class="none" url="/pages/commonList/commonList">
       <view class="nav-item-icon"></view>
       <view class="nav-item-text">题目闯关</view>
-    </view>
-    <view class="nav-item">
+    </navigator>
+    <navigator class="nav-item" hover-class="none" url="/pages/testList/testList">
       <view class="nav-item-icon"></view>
       <view class="nav-item-text">试卷考试</view>
-    </view>
+    </navigator>
   </view>
   <van-sticky>
     <view class="dropdown-wrap">
@@ -137,5 +137,16 @@
       </view>
     </view>
   </view>
+
+
+  <!--PK dialog-->
+  <van-popup show="{{show}}" round bind:close="onClose">
+    <view class="pk-wrap">
+      <view class="pk-title">答题PK</view>
+      <view class="pk-tips">完成答题后，即可邀请PK好友接受挑战。</view>
+      <view class="pk-btn" bindtap="handleToPkDetail">开始答题</view>
+    </view>
+  </van-popup>
+
   <tabbar active="{{currentPage}}"></tabbar>
 </view>

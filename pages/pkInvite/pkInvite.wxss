@@ -1,0 +1,128 @@
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/pk_invite_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.header-block {
+  width: 694rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  font-size: 32rpx;
+  color: #999999;
+  margin: 0 auto 40rpx;
+  padding: 40rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.pk-result {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120rpx;
+  height: 120rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/pk_invite_success.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-block-title {
+  font-size: 36rpx;
+  color: #222;
+  display: flex;
+  align-items: center;
+}
+
+.subs {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.header-block-inner {
+  width: 486rpx;
+  height: 126rpx;
+  background: #F8F8F8;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46rpx 64rpx;
+  margin-top: 24rpx;
+}
+
+.num-right {
+  font-size: 72rpx;
+  color: #1AC97C;
+  font-family: Barlow-BoldItalic, Barlow;
+}
+
+.num-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 126rpx;
+}
+
+.num-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.num-item-text {
+  font-size: 32rpx;
+  color: #222222;
+  margin-left: 4rpx;
+}
+
+.empty {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.empty-icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 24rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/pk_invite_tip.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx 28rpx 0;
+}
+
+.btn {
+  width: 334rpx;
+  height: 92rpx;
+  border-radius: 46rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+
+.btn-line {
+  border: 2rpx solid #FFFFFF;
+  color: #FFF;
+}
+
+.btn-bg {
+  background: #FFFFFF;
+  color: #FF333B;
+}

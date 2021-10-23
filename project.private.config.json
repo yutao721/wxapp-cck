@@ -77,6 +77,48 @@
           "pathName": "pages/errorDetail/errorDetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "答题排行",
+          "pathName": "pages/rankList/rankList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pk答题",
+          "pathName": "pages/pkDetail/pkDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pk答题结果",
+          "pathName": "pages/pkResult/pkResult",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pk邀请页面",
+          "pathName": "pages/pkInvite/pkInvite",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "题目闯关列表",
+          "pathName": "pages/commonList/commonList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "试卷考试列表",
+          "pathName": "pages/testList/testList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "题目闯关首页",
+          "pathName": "pages/throughHome/throughHome",
+          "query": "",
+          "scene": null
         }
       ]
     }

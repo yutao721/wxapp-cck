@@ -12,7 +12,14 @@
     "pages/history/history",
     "pages/answerList/answerList",
     "pages/errorList/errorList",
-    "pages/errorDetail/errorDetail"
+    "pages/errorDetail/errorDetail",
+    "pages/rankList/rankList",
+    "pages/pkDetail/pkDetail",
+    "pages/pkResult/pkResult",
+    "pages/pkInvite/pkInvite",
+    "pages/commonList/commonList",
+    "pages/throughHome/throughHome",
+    "pages/testList/testList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -68,6 +75,8 @@
   },
   "usingComponents": {
     "tabbar": "/component/tabbar/tabbar",
-    "navbar": "/component/navbar/navbar"
+    "navbar": "/component/navbar/navbar",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-sticky": "@vant/weapp/sticky/index"
   }
 }

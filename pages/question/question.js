@@ -12,7 +12,22 @@ Page({
       { text: '销量排序', value: 'c' }
     ],
     value1: 0,
-    value2: 'a'
+    value2: 'a',
+    show: false
+  },
+
+  onClose() {
+    this.setData({ show: false });
+  },
+
+  handleOpenPk() {
+    this.setData({ show: true });
+  },
+
+  handleToPkDetail() {
+    this.setData({ show: false }, () => {
+      wx.navigateTo({ url: `/pages/pkDetail/pkDetail` })
+    });
   },
 
   onLoad() {

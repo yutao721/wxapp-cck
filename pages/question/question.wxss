@@ -1,6 +1,7 @@
 page {
   background: #FFF;
   padding-bottom: 200rpx;
+  --popup-round-border-radius: 16rpx;
 }
 
 .header {
@@ -27,7 +28,6 @@ page {
   border-radius: 16rpx;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 20rpx;
 }
 
@@ -36,6 +36,7 @@ page {
   height: 44rpx;
   background-color: red;
   margin-right: 14rpx;
+  margin-left: 24rpx;
 }
 
 .nav-item-text {
@@ -90,3 +91,43 @@ page {
   font-size: 24rpx;
   color: #AAAAAA;
 }
+
+
+/*pk-wrap*/
+.pk-wrap {
+  width: 600rpx;
+  height: 374rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/pk_dialog_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.pk-title {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #222222;
+  text-align: center;
+  padding: 48rpx 0 32rpx;
+}
+
+.pk-tips {
+  font-size: 30rpx;
+  color: #222222;
+  line-height: 44rpx;
+  margin: 0 46rpx;
+}
+
+.pk-btn {
+  width: 224rpx;
+  height: 76rpx;
+  background: linear-gradient(90deg, #FF8254 0%, #FF333B 100%);
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #FFF;
+  margin: 32rpx auto 0;
+}
+
+/*pk-wrap=========*/

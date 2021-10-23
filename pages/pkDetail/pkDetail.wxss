@@ -8,7 +8,7 @@ page {
   align-items: center;
   justify-content: space-between;
   height: 90rpx;
-  padding: 40rpx 28rpx 0;
+  padding: 0 28rpx;
   box-sizing: border-box;
   background-color: #FFF;
 }
@@ -25,6 +25,16 @@ page {
   height: 28rpx;
   background: #FF333B;
   margin-right: 12rpx;
+}
+
+.blocks-title-icon.icon-right {
+  width: 32rpx;
+  height: 26rpx;
+  margin-right: 16rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_nav_left.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .blocks-title-text {
@@ -49,6 +59,12 @@ page {
   color: #222222;
 }
 
+.num-total {
+  font-size: 28rpx;
+  color: #999999
+}
+
+/*question-wrap*/
 .question-wrap {
   background: #FFF;
   padding: 64rpx 28rpx;
@@ -159,6 +175,18 @@ page {
   word-break: break-all;
 }
 
+.require-tips {
+  width: 418rpx;
+  position: absolute;
+  bottom: 200rpx;
+  right: 94rpx;
+  font-size: 24rpx;
+  font-family: AppleColorEmoji;
+  color: #FF0000;
+  line-height: 44rpx;
+}
+
+/*footer*/
 .footer {
   width: 750rpx;
   height: 124rpx;
@@ -218,7 +246,7 @@ page {
 }
 
 .btn {
-  width: 204rpx;
+  width: 426rpx;
   height: 84rpx;
   border-radius: 8rpx;
   display: flex;
@@ -226,7 +254,6 @@ page {
   justify-content: center;
   box-sizing: border-box;
   font-size: 28rpx;
-  margin-left: 18rpx;
 }
 
 .btn-line {
@@ -301,13 +328,13 @@ page {
 }
 
 .card-item.right {
-  background: #1AC97C;
-  color: #FFF;
+  background: rgba(16, 198, 118, .1);
+  color: #1AC97C;
 }
 
 .card-item.error {
-  background: #FF333B;
-  color: #FFF;
+  background: rgba(255, 51, 59, .1);
+  color: #FF333B;
 }
 
 /*答题卡==========*/
