@@ -1,0 +1,84 @@
+<view class="wrap">
+  <view class="block">
+    <view class="block-header">
+      <view class="block-header-img"></view>
+      <view class="block-header-info">
+        <view class="info-title">企业文化</view>
+        <view class="info-num-wrap">
+          <text>闯关成功：10人</text>
+          <text>共50人</text>
+        </view>
+        <view class="info-progress"></view>
+      </view>
+    </view>
+    <view class="block-bd">
+      <view class="block-bd-title">我的闯关概况</view>
+      <view class="block-bd-items">
+        <view class="block-bd-item">
+          <view class="flex-box">
+            <view class="block-bd-item-icon"></view>
+            <view class="block-bd-item-text">题目总数</view>
+          </view>
+          <view class="block-bd-item-num">45</view>
+        </view>
+        <view class="block-bd-item">
+          <view class="flex-box">
+            <view class="block-bd-item-icon"></view>
+            <view class="block-bd-item-text">做题总数</view>
+          </view>
+          <view class="block-bd-item-num">45</view>
+        </view>
+        <view class="block-bd-item">
+          <view class="flex-box">
+            <view class="block-bd-item-icon"></view>
+            <view class="block-bd-item-text">对题总数</view>
+          </view>
+          <view class="block-bd-item-num">45</view>
+        </view>
+      </view>
+      <view class="block-hd-tips">已尝试做题8次，最远一次做到第15</view>
+      <view class="block-hd-btn">开始闯关</view>
+    </view>
+  </view>
+  <view class="list-wrap">
+    <view class="list-wrap-title">推荐闯关</view>
+    <view class="lists">
+      <navigator class="list list-bg-1" hover-class="none" url="/pages/pkDetail/pkDetail">
+        <view class="list-info">
+          <view class="title-wrap">
+            <text class="title-name">企业文化</text>
+            <text>共12道题</text>
+          </view>
+          <view class="list-desc">深度学习企业文化，强化员工思想建设强化员工思想建设</view>
+        </view>
+        <view class="list-btn">
+          <view class="list-btn-img"></view>
+        </view>
+      </navigator>
+      <navigator class="list list-bg-2" hover-class="none" url="/pages/pkDetail/pkDetail">
+        <view class="list-info">
+          <view class="title-wrap">
+            <text class="title-name">企业文化</text>
+            <text>共12道题</text>
+          </view>
+          <view class="list-desc">深度学习企业文化，强化员工思想建设强化员工思想建设</view>
+        </view>
+        <view class="list-btn">
+          <view class="list-btn-img"></view>
+        </view>
+      </navigator>
+      <navigator class="list list-bg-3" hover-class="none" url="/pages/pkDetail/pkDetail">
+        <view class="list-info">
+          <view class="title-wrap">
+            <text class="title-name">企业文化</text>
+            <text>共12道题</text>
+          </view>
+          <view class="list-desc">深度学习企业文化，强化员工思想建设强化员工思想建设</view>
+        </view>
+        <view class="list-btn">
+          <view class="list-btn-img"></view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
