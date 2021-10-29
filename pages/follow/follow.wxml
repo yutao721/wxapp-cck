@@ -1,0 +1,29 @@
+<view class="wrap">
+  <view class="tabs">
+    <view class="tabs-item {{activeTab == item.value ? 'active' : ''}}"
+          data-value="{{item.value}}"
+          bindtap="handleSwitchTab"
+          wx:key="unique"
+          wx:for="{{tabs}}">{{item.label}}
+    </view>
+  </view>
+
+  <view class="question-lists" wx:if="{{activeTab == 'question'}}">
+    <view class="question-list">
+      <view class="question-list-title">党章规定，发展党员，必须经过，坚持个别吸收的原则。</view>
+      <view class="question-list-info">
+        <view class="question-list-tag">单选题</view>
+        <view class="question-list-more">
+          <view class="question-list-more-text">查看解析</view>
+          <view class="question-list-more-icon"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="word-lists" wx:if="{{activeTab == 'word'}}">
+    <wordItem></wordItem>
+    <wordItem></wordItem>
+  </view>
+
+</view>

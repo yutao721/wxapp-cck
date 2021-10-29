@@ -1,0 +1,4 @@
+page {
+  --tabbar-item-text-color: #666;
+  --tabbar-item-active-color: #E90012;
+}

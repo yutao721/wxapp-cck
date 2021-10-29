@@ -5,11 +5,11 @@
     <image slot="icon"
            src="{{ item.normal }}"
            mode="aspectFit"
-           style="width: 30px; height: 18px;"/>
+           style="width: 44rpx; height: 44rpx;"/>
     <image slot="icon-active"
            src="{{ item.active }}"
            mode="aspectFit"
-           style="width: 30px; height: 18px;"/>
+           style="width: 44rpx; height: 44rpx;"/>
     {{item.text}}
   </van-tabbar-item>
 </van-tabbar>

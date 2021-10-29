@@ -1,5 +1,7 @@
 <view class="wrap">
-  <view class="header">题库</view>
+  <view class="header">
+    <calendar clock-datas="{{clockData}}" bindchangeMonth="changeMonth"></calendar>
+  </view>
   <view class="nav-items">
     <navigator class="nav-item" hover-class="none" url="/pages/answerList/answerList">
       <view class="nav-item-icon"></view>

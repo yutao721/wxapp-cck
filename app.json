@@ -19,7 +19,8 @@
     "pages/pkInvite/pkInvite",
     "pages/commonList/commonList",
     "pages/throughHome/throughHome",
-    "pages/testList/testList"
+    "pages/testList/testList",
+    "pages/follow/follow"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,38 +39,38 @@
   },
   "tabBar": {
     "custom": true,
-    "color": "#C5C5C5",
-    "selectedColor": "#FDD040",
+    "color": "#666666",
+    "selectedColor": "#E90012",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "./images/home.png",
-        "selectedIconPath": "./images/home_on.png"
+        "iconPath": "./images/tab/index_default.png",
+        "selectedIconPath": "./images/tab/index_active.png"
       },
       {
         "pagePath": "pages/question/question",
         "text": "题库",
-        "iconPath": "./images/home.png",
-        "selectedIconPath": "./images/home_on.png"
+        "iconPath": "./images/tab/question_default.png",
+        "selectedIconPath": "./images/tab/question_active.png"
       },
       {
         "pagePath": "pages/material/material",
         "text": "资料",
-        "iconPath": "./images/home.png",
-        "selectedIconPath": "./images/home_on.png"
+        "iconPath": "./images/tab/material_default.png",
+        "selectedIconPath": "./images/tab/material_active.png"
       },
       {
         "pagePath": "pages/staff/staff",
         "text": "员工",
-        "iconPath": "./images/home.png",
-        "selectedIconPath": "./images/home_on.png"
+        "iconPath": "./images/tab/staff_default.png",
+        "selectedIconPath": "./images/tab/staff_active.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "./images/home.png",
-        "selectedIconPath": "./images/home_on.png"
+        "iconPath": "./images/tab/mine_default.png",
+        "selectedIconPath": "./images/tab/mine_active.png"
       }
     ]
   },
@@ -77,6 +78,8 @@
     "tabbar": "/component/tabbar/tabbar",
     "navbar": "/component/navbar/navbar",
     "van-popup": "@vant/weapp/popup/index",
-    "van-sticky": "@vant/weapp/sticky/index"
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-icon": "@vant/weapp/icon/index"
   }
 }

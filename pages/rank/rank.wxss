@@ -7,10 +7,16 @@ page {
 }
 
 .header {
-  background-color: #26339B;
   height: 548rpx;
-  position: relative;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/rank_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
+
 
 .tabs {
   height: 80rpx;
@@ -50,7 +56,7 @@ page {
 }
 
 .lists {
-  padding: 0 40rpx;
+  padding: 548rpx 40rpx 0;
   box-sizing: border-box;
 }
 

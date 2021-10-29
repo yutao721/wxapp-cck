@@ -62,7 +62,9 @@
 .edit {
   width: 32rpx;
   height: 32rpx;
-  background-color: green;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_edit.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .company-wrap {
@@ -81,7 +83,9 @@
   width: 60rpx;
   height: 60rpx;
   border-radius: 100%;
-  background-color: violet;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_logo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   flex-shrink: 0;
 }
 
@@ -139,13 +143,32 @@
   width: 36rpx;
   height: 36rpx;
   margin-right: 16rpx;
-  background-color: khaki;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.list-icon.score {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_score.png);
+}
+
+.list-icon.rank {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_rank.png);
+}
+
+.list-icon.follow {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_follow.png);
+}
+
+.list-icon.data {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_data.png);
 }
 
 .icon-right {
   width: 16rpx;
   height: 26rpx;
-  background: #666666;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_mine_right.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   margin-left: auto;
 }
 

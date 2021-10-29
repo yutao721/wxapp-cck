@@ -1,0 +1,103 @@
+.wrap {
+
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  height: 96rpx;
+  padding: 0 28rpx;
+  background-color: #fff;
+}
+
+.tabs-item {
+  margin-right: 56rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.tabs-item.active {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #222222;
+}
+
+.question-list {
+  width: 694rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 0 24rpx 0;
+  margin: 28rpx auto;
+  box-sizing: border-box;
+}
+
+.question-list-title {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 44rpx;
+  padding: 28rpx 0 24rpx 0;
+}
+
+.question-list-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1rpx solid #EAEAEA;
+  height: 90rpx;
+}
+
+.question-list-tag {
+  width: 104rpx;
+  height: 40rpx;
+  background: #EAEAEA;
+  border-radius: 4rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.question-list-more {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.question-list-more-text {
+  font-size: 28rpx;
+  color: #E90012;
+}
+
+.question-list-more-icon {
+  width: 26rpx;
+  height: 26rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_right_circle.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: 5rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

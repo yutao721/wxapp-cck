@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "资料",
   "usingComponents": {
+    "wordItem": "/component/wordItem/wordItem"
   }
 }

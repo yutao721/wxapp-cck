@@ -5,7 +5,7 @@ page {
   --button-border-radius: 10px;
   --button-default-color: #f2f3f5;
   --toast-max-width: 100px;
-  --toast-background-color: pink;
+  /*--toast-background-color: pink;*/
 
   /* NavBar */
   --nav-bar-arrow-size: 20px;

@@ -6,7 +6,9 @@ page {
   width: 694rpx;
   height: 400rpx;
   margin: 0 auto;
-  background-color: orangered;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/score_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   position: relative;
   border-radius: 16rpx;
 }
@@ -32,6 +34,7 @@ page {
   height: 86rpx;
   background: #FF7700;
   border-radius: 0 0 16rpx 16rpx;
+  opacity: .5;
   display: flex;
   align-items: center;
   position: absolute;
@@ -56,7 +59,9 @@ page {
 .lists-title-icon {
   width: 40rpx;
   height: 40rpx;
-  background-color: red;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/score_tips.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   margin-right: 18rpx;
 }
 

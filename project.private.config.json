@@ -119,6 +119,12 @@
           "pathName": "pages/throughHome/throughHome",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "我的收藏",
+          "pathName": "pages/follow/follow",
+          "query": "",
+          "scene": null
         }
       ]
     }

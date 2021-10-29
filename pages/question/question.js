@@ -13,7 +13,13 @@ Page({
     ],
     value1: 0,
     value2: 'a',
-    show: false
+    show: false,
+    clockData: [
+      { date: '2021-10-21' },
+      { date: '2021-10-22' },
+      { date: '2021-10-23' },
+      { date: '2021-10-24' }
+    ]
   },
 
   onClose() {
@@ -30,7 +36,23 @@ Page({
     });
   },
 
+  // 日历组件月更改事件
+  changeMonth(e) {
+    console.log('日历组件月改变事件', e);
+    this.setData({
+      clockData: [
+        { date: '2020-05-11' },
+        { date: '2020-05-12' },
+        { date: '2020-05-23' },
+        { date: '2020-05-24' }
+      ]
+    })
+  },
+
   onLoad() {
     app.changeTabbar();
   }
 });
+
+
+

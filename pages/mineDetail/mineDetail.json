@@ -1,5 +1,7 @@
 {
-  "navigationStyle": "custom",
+  "navigationStyle": "default",
+  "navigationBarBackgroundColor": "#F7382D",
   "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的数据",
   "usingComponents": {}
 }

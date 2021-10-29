@@ -1,5 +1,4 @@
 <view class="wrap">
-  <navbar title="我的数据" placeholder="{{false}}" border="{{false}}"></navbar>
   <view class="header">
     <view class="block">
 
@@ -11,7 +10,7 @@
             <view class="work">17626652877</view>
           </view>
         </view>
-        <view class="edit"></view>
+        <view class="edit" bindtap="handleSign"></view>
       </view>
 
       <view class="info-lists">
@@ -203,4 +202,11 @@
 
   </view>
 
+  <!--签到成功-->
+  <van-toast id="van-toast">
+    <view class="toast-score-wrap">
+      <view class="toast-score-icon"></view>
+      <text class="toast-score">+10积分</text>
+    </view>
+  </van-toast>
 </view>

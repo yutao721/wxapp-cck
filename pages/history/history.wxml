@@ -10,26 +10,8 @@
   </view>
 
   <view class="word-lists" wx:if="{{activeTab == 'word'}}">
-    <view class="word-list">
-      <view class="word-list-img"></view>
-      <view class="word-list-info">
-        <view class="word-list-title">中国建筑的科技与智慧（三）.docx</view>
-        <view class="word-list-time">
-          <view class="time">2021-06-21</view>
-          <view class="tag">党训</view>
-        </view>
-      </view>
-    </view>
-    <view class="word-list">
-      <view class="word-list-img"></view>
-      <view class="word-list-info">
-        <view class="word-list-title">中国建筑的科技与智慧中国建筑的科技与智慧（三）.docx</view>
-        <view class="word-list-time">
-          <view class="time">2021-06-21</view>
-          <view class="tag">党训</view>
-        </view>
-      </view>
-    </view>
+    <wordItem></wordItem>
+    <wordItem></wordItem>
   </view>
 
   <view class="video-lists" wx:if="{{activeTab == 'video'}}">

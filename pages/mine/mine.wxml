@@ -1,9 +1,8 @@
 <view class="wrap">
   <navbar title="我的" placeholder="{{false}}" border="{{false}}"></navbar>
-  <tabbar active="{{currentPage}}"></tabbar>
+
   <view class="header">
     <view class="block">
-
       <view class="info-wrap">
         <view class="info-inner">
           <view class="avatar"></view>
@@ -28,22 +27,22 @@
     <view class="lists-wrap">
       <view class="lists">
         <navigator class="list" hover-class="none" url="/pages/integralList/integralList">
-          <view class="list-icon"></view>
+          <view class="list-icon score"></view>
           <view class="list-txt">我的积分</view>
           <view class="icon-right"></view>
         </navigator>
         <navigator class="list" hover-class="none" url="/pages/rank/rank">
-          <view class="list-icon"></view>
+          <view class="list-icon rank"></view>
           <view class="list-txt">高管驾驶舱</view>
           <view class="icon-right"></view>
         </navigator>
-        <view class="list">
-          <view class="list-icon"></view>
+        <navigator class="list" hover-class="none" url="/pages/follow/follow">
+          <view class="list-icon follow"></view>
           <view class="list-txt">我的收藏</view>
           <view class="icon-right"></view>
-        </view>
+        </navigator>
         <navigator class="list" hover-class="none" url="/pages/mineDetail/mineDetail">
-          <view class="list-icon"></view>
+          <view class="list-icon data"></view>
           <view class="list-txt">我的数据</view>
           <view class="icon-right"></view>
         </navigator>
@@ -52,4 +51,5 @@
 
   </view>
 
+  <tabbar active="{{currentPage}}"></tabbar>
 </view>

@@ -1,0 +1,80 @@
+<view class="calendar {{showMore ? 'more' : ''}}">
+
+  <view class="header-title">
+    <view class="header-title-tips">今日已答题签到</view>
+    <view class="header-title-rule">签到规则</view>
+  </view>
+  <view class="header-sign">本周已签到/07天 | 本月已签到/{{totalDays}}天</view>
+  <view class="header-bar">
+    <view class="header-bar-icon left" bindtap="handlePrev"></view>
+    <text>{{currentYear}}年 {{currentMonth}}月</text>
+    <view class="header-bar-icon" bindtap="handleNext"></view>
+  </view>
+
+  <view class="week-container">
+
+    <block wx:for="{{weekData}}" wx:key="unique">
+      <view class="week-item">{{item}}</view>
+    </block>
+  </view>
+
+  <view class="calendar-container {{showMore?'large-active':''}}">
+    <block wx:if="{{!showMore}}">
+      <view class="mini-calendar">
+        <block wx:for="{{miniContent}}" wx:key="unique">
+          <view class="day-item {{item.monthStatus==1?'':'other-moth'}}">
+            <view class="day-title {{item.isSignIn?'sign-active':''}} {{item.isToday?'today':''}}">{{item.isToday ? '今日' :item.title}}</view>
+            <view class="day-status">{{item.isSignIn ? '已签' : item.forTodayStatus > 0 ? '待签' : '未签'}}</view>
+          </view>
+        </block>
+      </view>
+    </block>
+
+    <block wx:elif="{{showMore}}">
+      <swiper class="swiper"
+              current="{{lastSwiper}}"
+              circular
+              autoplay="{{autoplay}}"
+              bindchange="swiperChange">
+        <!-- 第一滑块 -->
+        <swiper-item>
+          <view class="large-calendar">
+            <block wx:for="{{largeContent}}" wx:key="unique">
+              <view class="day-item {{item.monthStatus==1?'':'other-moth'}}">
+                <view class="day-title {{item.isSignIn?'sign-active':''}} {{item.isToday?'today':''}}">{{item.isToday ? '今日' :item.title}}</view>
+                <view class="day-status">{{item.isSignIn ? '已签' : item.forTodayStatus > 0 ? '待签' : '未签'}}</view>
+              </view>
+            </block>
+          </view>
+        </swiper-item>
+
+        <!-- 第二滑块 -->
+        <swiper-item>
+          <view class="large-calendar">
+            <block wx:for="{{largeContent}}" wx:key="unique">
+              <view class="day-item {{item.monthStatus==1?'':'other-moth'}}">
+                <view class="day-title {{item.isSignIn?'sign-active':''}} {{item.isToday?'today':''}}">{{item.isToday ? '今日' :item.title}}</view>
+                <view class="day-status">{{item.isSignIn ? '已签' : item.forTodayStatus > 0 ? '待签' : '未签'}}</view>
+              </view>
+            </block>
+          </view>
+        </swiper-item>
+
+        <!-- 第三滑块 -->
+        <swiper-item>
+          <view class="large-calendar">
+            <block wx:for="{{largeContent}}" wx:key="unique">
+              <view class="day-item {{item.monthStatus==1?'':'other-moth'}}">
+                <view class="day-title {{item.isSignIn?'sign-active':''}} {{item.isToday?'today':''}}">{{item.isToday ? '今日' :item.title}}</view>
+                <view class="day-status">{{item.isSignIn ? '已签' : item.forTodayStatus > 0 ? '待签' : '未签'}}</view>
+              </view>
+            </block>
+          </view>
+        </swiper-item>
+      </swiper>
+    </block>
+
+
+  </view>
+  <view class="bottom-toggle {{showMore ? 'up': ''}}" bindtap="contentToggle"></view>
+</view>

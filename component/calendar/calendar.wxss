@@ -1,0 +1,223 @@
+
+.calendar {
+  width: 100%;
+  height: 440rpx;
+  font-size: 28rpx;
+  background: linear-gradient(90deg, #FF653B 0%, #FF1800 100%);
+  box-shadow: 0 2rpx 20rpx 0 rgba(151, 151, 151, 0.18);
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 0 0 32rpx;
+  border-radius: 16rpx;
+  z-index: 100;
+  color: #FFFFFF;
+}
+
+.calendar:after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 440rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/calendar_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.calendar.more {
+  height: 902rpx;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  padding: 32rpx 32rpx 0 0;
+}
+
+.header-title-tips {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.header-sign {
+  font-size: 26rpx;
+  margin: 12rpx 0;
+}
+
+.header-bar {
+  width: 630rpx;
+  height: 64rpx;
+  border-radius: 36rpx;
+  background: rgba(255, 255, 255, .2);
+  margin: 14rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.header-bar-icon {
+  width: 22rpx;
+  height: 26rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_calendar_arrow_right.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header-bar-icon.left {
+  transform: rotate(180deg);
+}
+
+/* 星期头部 */
+.week-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  height: 68rpx;
+}
+
+.week-container .week-item {
+  width: 68rpx;
+  height: 68rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 26rpx;
+}
+
+/* 星期头部 */
+
+/* 主体 */
+.calendar-container {
+  width: 100%;
+  transition: all .25s;
+  position: relative;
+}
+
+.large-active {
+
+}
+
+.bottom-toggle {
+  width: 24rpx;
+  height: 24rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_arrow_down.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 10rpx auto 0;
+  transition: all .3;
+  position: absolute;
+  bottom: 14rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-toggle.up {
+  transform: rotate(180deg);
+}
+
+/* 主体 */
+
+/* 收缩日历主体 */
+.mini-calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+/* 收缩日历主体 */
+
+/* 展开日历主体 */
+.swiper {
+  height: 560rpx;
+}
+
+.large-calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.large-calendar .month-show {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* 展开日历主体 */
+
+/* 公用样式 */
+.day-item {
+  flex-shrink: 0;
+  width: 68rpx;
+  min-height: 108rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 26rpx 8rpx 0;
+}
+
+.other-moth {
+  opacity: .5;
+}
+
+.today-item {
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+}
+
+.day-item .day-title {
+
+}
+
+.day-status {
+  width: 68rpx;
+  height: 40rpx;
+  background: #FF5C43;
+  border-radius: 34rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  color: #FFF;
+  margin-top: 4rpx;
+}
+
+.day-item .sign-active {
+
+}
+
+.day-item .today {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.day-item .sign-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+
+.day-item .sign-icon .image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 公用样式 */

@@ -1,0 +1,66 @@
+.word-list {
+  width: 648rpx;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 28rpx auto;
+  padding: 28rpx 24rpx;
+  position: relative;
+}
+
+.word-list-follow {
+  width: 38rpx;
+  height: 42rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_follow_default.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 24rpx;
+}
+
+.word-list-follow.active {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_follow_active.png);
+}
+
+.word-list-img {
+  width: 92rpx;
+  height: 92rpx;
+  background-color: red;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+
+.word-list-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.word-list-title {
+  font-size: 32rpx;
+  color: #333;
+  padding-right: 36rpx;
+}
+
+.word-list-time {
+  display: flex;
+  margin-top: 10rpx;
+}
+
+.time {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.tag {
+  width: 64rpx;
+  height: 36rpx;
+  background: #EAEAEA;
+  border-radius: 4rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
