@@ -3,28 +3,28 @@
     <calendar clock-datas="{{clockData}}" bindchangeMonth="changeMonth"></calendar>
   </view>
   <view class="nav-items">
-    <navigator class="nav-item" hover-class="none" url="/pages/answerList/answerList">
-      <view class="nav-item-icon"></view>
+    <navigator class="nav-item nav-item1" hover-class="none" url="/pages/answerList/answerList">
+      <image class="nav-item-icon" src="{{imgPath}}icon_q_1.png"></image>
       <view class="nav-item-text">答题记录</view>
     </navigator>
-    <navigator class="nav-item" hover-class="none" url="/pages/errorList/errorList">
-      <view class="nav-item-icon"></view>
+    <navigator class="nav-item nav-item2" hover-class="none" url="/pages/errorList/errorList">
+      <image class="nav-item-icon" src="{{imgPath}}icon_q_2.png"></image>
       <view class="nav-item-text">错题集</view>
     </navigator>
-    <navigator class="nav-item" hover-class="none" url="/pages/rankList/rankList">
-      <view class="nav-item-icon"></view>
+    <navigator class="nav-item nav-item3" hover-class="none" url="/pages/rankList/rankList">
+      <image class="nav-item-icon" src="{{imgPath}}icon_q_3.png"></image>
       <view class="nav-item-text">答题排行</view>
     </navigator>
-    <view class="nav-item" bindtap="handleOpenPk">
-      <view class="nav-item-icon"></view>
+    <view class="nav-item nav-item4" bindtap="handleOpenPk">
+      <image class="nav-item-icon" src="{{imgPath}}icon_q_4.png"></image>
       <view class="nav-item-text">答题pk</view>
     </view>
-    <navigator class="nav-item" hover-class="none" url="/pages/commonList/commonList">
-      <view class="nav-item-icon"></view>
+    <navigator class="nav-item nav-item5" hover-class="none" url="/pages/commonList/commonList">
+      <image class="nav-item-icon" src="{{imgPath}}icon_q_5.png"></image>
       <view class="nav-item-text">题目闯关</view>
     </navigator>
-    <navigator class="nav-item" hover-class="none" url="/pages/testList/testList">
-      <view class="nav-item-icon"></view>
+    <navigator class="nav-item nav-item6" hover-class="none" url="/pages/testList/testList">
+      <image class="nav-item-icon" src="{{imgPath}}icon_q_6.png"></image>
       <view class="nav-item-text">试卷考试</view>
     </navigator>
   </view>

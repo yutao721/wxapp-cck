@@ -14,6 +14,7 @@ Page({
     value1: 0,
     value2: 'a',
     show: false,
+    imgPath: app.$imgPath,
     clockData: [
       { date: '2021-10-21' },
       { date: '2021-10-22' },

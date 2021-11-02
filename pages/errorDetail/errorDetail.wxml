@@ -47,7 +47,7 @@
 
   <view class="footer">
     <view class="nav-items">
-      <view class="nav-item">
+      <view class="nav-item" bindtap="handleOpenCard">
         <view class="nav-item-icon card"></view>
         <view class="nav-item-text">答题卡</view>
       </view>

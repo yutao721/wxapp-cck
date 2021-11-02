@@ -28,12 +28,49 @@ page {
   display: flex;
   align-items: center;
   margin-bottom: 20rpx;
+  position: relative;
+}
+
+.nav-item:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 70rpx;
+  height: 70rpx;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.nav-item1:after {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_g_1.png);
+}
+
+.nav-item2:after {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_g_2.png);
+}
+
+.nav-item3:after {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_g_3.png);
+}
+
+.nav-item4:after {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_g_4.png);
+}
+
+.nav-item5:after {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_g_5.png);
+}
+
+.nav-item6:after {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_g_6.png);
 }
 
 .nav-item-icon {
   width: 44rpx;
   height: 44rpx;
-  background-color: red;
   margin-right: 14rpx;
   margin-left: 24rpx;
 }
@@ -41,6 +78,7 @@ page {
 .nav-item-text {
   font-size: 28rpx;
   color: #222222;
+  z-index: 1;
 }
 
 .dropdown-wrap {

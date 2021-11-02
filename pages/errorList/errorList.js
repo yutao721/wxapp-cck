@@ -2,23 +2,23 @@ Page({
   data: {
     tabbarList: [
       {
-        text: '全部答题',
+        text: '全部错题',
         value: ''
       },
       {
-        text: '题库答题',
+        text: '题库错题',
         value: '10'
       },
       {
-        text: 'pk记录',
+        text: 'pk错题',
         value: '25'
       },
       {
-        text: '闯关记录',
+        text: '闯关错题',
         value: '30'
       },
       {
-        text: '考试记录',
+        text: '考试错题',
         value: '40'
       }
 

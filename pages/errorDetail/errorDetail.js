@@ -1,6 +1,14 @@
 Page({
   data: {
-    show: true
+    show: false
+  },
+
+  handleOpenCard() {
+    this.setData({ show: true })
+  },
+
+  onClose() {
+    this.setData({ show: false });
   },
 
   onClose() {
