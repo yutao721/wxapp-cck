@@ -93,7 +93,7 @@
         {
           "name": "pk答题结果",
           "pathName": "pages/pkResult/pkResult",
-          "query": "",
+          "query": "type=2",
           "scene": null
         },
         {

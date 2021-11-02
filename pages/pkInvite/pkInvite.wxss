@@ -6,6 +6,26 @@
   background-repeat: no-repeat;
 }
 
+.header {
+  padding: 30rpx 0;
+}
+
+.header-img {
+  width: 572rpx;
+  height: 98rpx;
+  margin: 0 auto 0;
+}
+
+.header-img.success {
+  width: 338rpx;
+  height: 128rpx;
+}
+
+.header-text {
+  font-size: 32rpx;
+  color: #FFFFFF;
+  text-align: center;
+}
 
 .header-block {
   width: 694rpx;

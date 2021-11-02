@@ -1,13 +1,42 @@
 page {
   background: #FFF;
+  padding-bottom: 200rpx;
 }
 
 .header {
   height: 492rpx;
   background: linear-gradient(180deg, #F7382D 0%, #FE6D47 100%);
   position: relative;
+  padding: 30rpx 28rpx;
+  box-sizing: border-box;
 }
 
+.h536 {
+  height: 536rpx;
+}
+
+.header-img {
+  width: 572rpx;
+  height: 98rpx;
+  margin: 0 auto 0;
+}
+
+.header-title {
+  font-size: 28rpx;
+  color: #FFF;
+  padding-top: 10rpx;
+}
+
+.header-name {
+  font-size: 36rpx;
+  color: #FFF;
+  padding-top: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
 .header-block {
   width: 694rpx;
@@ -118,16 +147,58 @@ page {
   color: #FF333B;
 }
 
-.btn {
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 124rpx;
+  background: #FFFFFF;
+  box-shadow: 0 -2rpx 20rpx 0 rgba(113, 113, 113, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-btn {
   width: 690rpx;
   height: 92rpx;
   background: linear-gradient(90deg, #FF8254 0%, #FF333B 100%);
   border-radius: 46rpx;
-  margin: 54rpx auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 32rpx;
+  color: #FFF;
+}
+
+.btn-group {
+  flex: 1;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 334rpx;
+  height: 92rpx;
+  border-radius: 46rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+
+.btn-line {
+  border: 2rpx solid #FF333B;
+  color: #FF333B;
+}
+
+.btn-bg {
+  background: linear-gradient(90deg, #FF8254 0%, #FF333B 100%);
   color: #FFF;
 }
 

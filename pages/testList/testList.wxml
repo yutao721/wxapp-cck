@@ -1,6 +1,6 @@
 <view class="wrap">
   <view class="lists">
-    <navigator class="list list-bg-1" hover-class="none" url="/pages/throughHome/throughHome">
+    <navigator class="list list-bg-1" hover-class="none" url="/pages/pkDetail/pkDetail?type=2">
       <view class="list-info">
         <view class="title-wrap">
           <text class="title-name">企业文化</text>
@@ -11,7 +11,7 @@
         <view class="list-btn-img"></view>
       </view>
     </navigator>
-    <navigator class="list list-bg-2" hover-class="none" url="/pages/throughHome/throughHome">
+    <navigator class="list list-bg-2" hover-class="none" url="/pages/pkDetail/pkDetail?type=2">
       <view class="list-info">
         <view class="title-wrap">
           <text class="title-name">企业文化</text>
@@ -22,7 +22,7 @@
         <view class="list-btn-img"></view>
       </view>
     </navigator>
-    <navigator class="list list-bg-3" hover-class="none" url="/pages/throughHome/throughHome">
+    <navigator class="list list-bg-3" hover-class="none" url="/pages/pkDetail/pkDetail?type=2">
       <view class="list-info">
         <view class="title-wrap">
           <text class="title-name">企业文化</text>

@@ -1,5 +1,12 @@
 <view class="wrap">
-  <view class="header">
+  <view class="header {{type == 1 ? '' : 'h536'}}">
+    <block wx:if="{{type == 1}}">
+      <image class="header-img" src="{{imgPath}}pk_text_1.png"></image>
+    </block>
+    <block wx:else>
+      <view class="header-title">试卷名称：</view>
+      <view class="header-name">企业文化考试题库</view>
+    </block>
     <view class="header-block">
       <text>正确率</text>
       <view class="num-right">80%</view>
@@ -15,6 +22,8 @@
       </view>
     </view>
   </view>
+
+
   <view class="content">
     <view class="title-wrap">
       <view class="blocks-title">
@@ -28,6 +37,13 @@
       <view class="card-item error">3</view>
       <view class="card-item error">3</view>
     </view>
-    <button class="btn" open-type="share">立即邀请好友</button>
+    <view class="footer">
+      <button class="share-btn" wx:if="{{type == 1}}" open-type="share">立即邀请好友</button>
+      <view class="btn-group" wx:else>
+        <view class="btn btn-line" bindtap="handleToErrDetail">回顾解析</view>
+        <view class="btn btn-bg" bindtap="handleToQues">返回题库</view>
+      </view>
+    </view>
+
   </view>
 </view>

@@ -38,7 +38,8 @@
     </view>
   </van-sticky>
   <view class="lists">
-    <view class="list">
+
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -47,8 +48,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -57,8 +58,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -67,8 +68,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -77,8 +78,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -87,8 +88,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -97,8 +98,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -107,8 +108,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -117,8 +118,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -127,8 +128,8 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
-    <view class="list">
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
       <view class="list-img"></view>
       <view class="list-info">
         <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
@@ -137,7 +138,18 @@
           <view class="list-tag">已学</view>
         </view>
       </view>
-    </view>
+    </navigator>
+    <navigator class="list" hover-class="none" url="/pages/pkDetail/pkDetail?type=3">
+      <view class="list-img"></view>
+      <view class="list-info">
+        <view class="list-title">穿越今古的法律智慧智慧智慧中国人民大学</view>
+        <view class="list-sub">
+          <view class="list-total">共12道题</view>
+          <view class="list-tag">已学</view>
+        </view>
+      </view>
+    </navigator>
+
   </view>
 
 

@@ -64,7 +64,7 @@
     </view>
     <view class="btn-group">
       <view class="btn btn-bg" wx:if="{{!isAnswer}}" bindtap="handleConfirm">确认</view>
-      <view class="btn btn-bg" wx:if="{{isAnswer && !isLast}}">下一题</view>
+      <view class="btn btn-bg" wx:if="{{isAnswer && !isLast}}" bindtap="handleNextQuestion">下一题</view>
       <view class="btn btn-bg" wx:if="{{isLast && isAnswer}}" bindtap="handleSubmit">提交</view>
     </view>
   </view>

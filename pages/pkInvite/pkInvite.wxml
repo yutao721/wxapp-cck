@@ -1,5 +1,14 @@
 <view class="wrap">
-  <view class="header"></view>
+  <view class="header">
+    <block wx:if="{{!hasScore}}">
+      <image class="header-img" src="{{imgPath}}pk_text_1.png"></image>
+    </block>
+    <block wx:if="{{hasScore}}">
+      <image class="header-img success" src="{{imgPath}}pk_text_2.png" wx:if="{{!isWinner}}"></image>
+      <image class="header-img success" src="{{imgPath}}pk_text_3.png" wx:if="{{isWinner}}"></image>
+      <view class="header-text">pk发起人：张小花</view>
+    </block>
+  </view>
 
   <view class="header-block">
     <view class="header-block-title">本人战绩</view>

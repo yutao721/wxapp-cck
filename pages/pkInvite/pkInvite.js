@@ -1,5 +1,9 @@
+const app = getApp();
 Page({
-  data: {},
+  data: {
+    imgPath: app.$imgPath,
+    hasScore: true
+  },
 
   // 分享给好友
   onShareAppMessage() {
