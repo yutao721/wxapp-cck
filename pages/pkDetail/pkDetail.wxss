@@ -256,6 +256,10 @@ page {
   font-size: 28rpx;
 }
 
+.btn.w550 {
+  width: 550rpx;
+}
+
 .btn-line {
   border: 2rpx solid #FF333B;
   color: #FF333B;
@@ -340,6 +344,101 @@ page {
 /*答题卡==========*/
 
 
+/*闯关失败、成功*/
+.result-wrap {
+  overflow-y: visible !important;
+}
+
+.result-inner {
+  position: relative;
+  width: 604rpx;
+  height: 400rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/img_popup_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.result-inner-bg {
+  position: absolute;
+  top: -65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 468rpx;
+  height: 470rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/img_popup_success.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.result-inner-bg.fail {
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/img_popup_fail.png);
+}
+
+.result-close {
+  width: 76rpx;
+  height: 76rpx;
+  background-image: url(http://zhuoyou-shop.oss-cn-hangzhou.aliyuncs.com/cck/icon_close.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -110rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.result-content {
+  padding-top: 118rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result-title {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #222222;
+}
+
+.result-tips {
+  font-size: 30rpx;
+  color: #222222;
+  margin: 20rpx auto 32rpx;
+}
+
+.result-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.r-btn {
+  width: 208rpx;
+  height: 76rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+
+.r-btn1 {
+  width: 440rpx;
+}
+
+.r-btn.btn-bg {
+  background: linear-gradient(90deg, #FF8254 0%, #FF333B 100%);
+  color: #FFF;
+}
+
+.r-btn.btn-line {
+  border: 2rpx solid #FD6848;
+  color: #FD6848;
+  margin-right: 24rpx;
+}
+
+/*闯关失败、成功===============*/
 
 
 

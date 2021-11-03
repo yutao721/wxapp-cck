@@ -1,5 +1,6 @@
 import Tips from '../../utils/tip';
 
+const app = getApp();
 Component({
   properties: {
     item: {
@@ -7,7 +8,9 @@ Component({
       value: {}
     }
   },
-  data: {},
+  data: {
+    imgPath: app.$imgPath
+  },
   methods: {
     handleFollow(e) {
       let { type } = e.currentTarget.dataset;

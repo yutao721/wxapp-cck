@@ -161,10 +161,10 @@ page {
 }
 
 .share-btn {
-  width: 690rpx;
-  height: 92rpx;
+  width: 694rpx;
+  height: 84rpx;
   background: linear-gradient(90deg, #FF8254 0%, #FF333B 100%);
-  border-radius: 46rpx;
+  border-radius: 42rpx;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,8 +183,8 @@ page {
 
 .btn {
   width: 334rpx;
-  height: 92rpx;
-  border-radius: 46rpx;
+  height: 84rpx;
+  border-radius: 42rpx;
   display: flex;
   align-items: center;
   justify-content: center;

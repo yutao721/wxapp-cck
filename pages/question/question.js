@@ -31,9 +31,10 @@ Page({
     this.setData({ show: true });
   },
 
+  // 开始答题
   handleToPkDetail() {
     this.setData({ show: false }, () => {
-      wx.navigateTo({ url: `/pages/pkDetail/pkDetail` })
+      wx.navigateTo({ url: `/pages/pkDetail/pkDetail?type=1` })
     });
   },
 

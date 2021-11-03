@@ -16,28 +16,28 @@
       <view class="block-bd-items">
         <view class="block-bd-item">
           <view class="flex-box">
-            <view class="block-bd-item-icon"></view>
+            <image class="block-bd-item-icon" src="{{imgPath}}icon_q_total.png"></image>
             <view class="block-bd-item-text">题目总数</view>
           </view>
           <view class="block-bd-item-num">45</view>
         </view>
         <view class="block-bd-item">
           <view class="flex-box">
-            <view class="block-bd-item-icon"></view>
+            <image class="block-bd-item-icon" src="{{imgPath}}icon_q_do.png"></image>
             <view class="block-bd-item-text">做题总数</view>
           </view>
           <view class="block-bd-item-num">45</view>
         </view>
         <view class="block-bd-item">
           <view class="flex-box">
-            <view class="block-bd-item-icon"></view>
+            <image class="block-bd-item-icon" src="{{imgPath}}icon_q_right.png"></image>
             <view class="block-bd-item-text">对题总数</view>
           </view>
           <view class="block-bd-item-num">45</view>
         </view>
       </view>
       <view class="block-hd-tips">已尝试做题8次，最远一次做到第15</view>
-      <view class="block-hd-btn">开始闯关</view>
+      <view class="block-hd-btn" bindtap="handleStart">开始闯关</view>
     </view>
   </view>
   <view class="list-wrap">

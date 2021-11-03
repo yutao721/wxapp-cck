@@ -93,7 +93,6 @@ page {
 .block-bd-item-icon {
   width: 28rpx;
   height: 32rpx;
-  background: red;
   margin-right: 12rpx;
 }
 

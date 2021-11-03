@@ -121,7 +121,7 @@
   position: relative;
 }
 
-.integral:after {
+.integral-detail:after {
   display: block;
   position: absolute;
   width: 182rpx;
@@ -149,6 +149,8 @@
 .integral-detail {
   display: flex;
   align-items: center;
+  height: 132rpx;
+  position: relative;
 }
 
 .integral-detail-text {

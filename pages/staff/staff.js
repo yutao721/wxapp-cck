@@ -3,19 +3,19 @@ Page({
   data: {
     tabs: [
       {
-        label: '企业动态',
+        label: '活动风采',
         value: 1
       },
       {
-        label: '法律法规',
+        label: '工作分享',
         value: 2
       },
       {
-        label: '安全手册',
+        label: '生活分享',
         value: 3
       },
       {
-        label: '行业新闻',
+        label: '知识分享',
         value: 4
       }
     ],

@@ -1,5 +1,6 @@
 <view class="wrap">
-  <van-sticky>
+
+  <van-sticky wx:if="{{type > 0}}">
     <view class="title-wrap">
       <view class="blocks-title">
         <view class="blocks-title-icon icon-right"></view>
@@ -13,6 +14,16 @@
     </view>
   </van-sticky>
 
+  <view class="title-wrap" wx:if="{{type < 0}}">
+    <view class="blocks-title">
+      <view class="blocks-title-icon"></view>
+      <view class="blocks-title-text">单选题</view>
+    </view>
+    <view class="num-wrap">
+      <text class="current-nmu">1</text>
+      <text>/15</text>
+    </view>
+  </view>
 
   <view class="question-wrap">
     <view class="question-name">【判断题】党章规定，发展党员，必须经过，坚持个别吸收的原则。</view>
@@ -49,11 +60,13 @@
     </view>
   </block>
 
-  <view class="require-tips" wx:if="{{!isAnswer}}">⬆️必须答题后，才能进入到下一题（注意下方“确认/下一题”）按钮⬇️</view>
+  <view class="require-tips" wx:if="{{!isAnswer && type > 0}}">⬆️必须答题后，才能进入到下一题（注意下方“确认/下一题”）按钮⬇️</view>
 
   <view class="footer">
     <view class="nav-items">
-      <view class="nav-item" bindtap="handleOpenCard">
+
+      <!--题目闯关不显示答题卡-->
+      <view class="nav-item" wx:if="{{type > 0}}" bindtap="handleOpenCard">
         <view class="nav-item-icon card"></view>
         <view class="nav-item-text">答题卡</view>
       </view>
@@ -63,65 +76,96 @@
       </view>
     </view>
     <view class="btn-group">
-      <view class="btn btn-bg" wx:if="{{!isAnswer}}" bindtap="handleConfirm">确认</view>
-      <view class="btn btn-bg" wx:if="{{isAnswer && !isLast}}" bindtap="handleNextQuestion">下一题</view>
-      <view class="btn btn-bg" wx:if="{{isLast && isAnswer}}" bindtap="handleSubmit">提交</view>
+      <block wx:if="{{type > 0}}">
+        <view class="btn btn-bg" wx:if="{{!isAnswer}}" bindtap="handleConfirm">确认</view>
+        <view class="btn btn-bg" wx:if="{{isAnswer && !isLast}}" bindtap="handleNextQuestion">下一题</view>
+        <view class="btn btn-bg" wx:if="{{isLast && isAnswer}}" bindtap="handleSubmit">提交</view>
+      </block>
+      <block wx:if="{{type < 0}}">
+        <view class="btn w550 btn-bg" wx:if="{{!isAnswer}}" bindtap="handleThrough">确认</view>
+      </block>
     </view>
   </view>
+
+  <!--答题卡-->
+  <van-popup show="{{ show }}"
+             bind:close="onClose"
+             position="bottom">
+    <view class="card-wrap">
+      <view class="card-title-wrap">
+        <view class="blocks-title">
+          <view class="blocks-title-icon"></view>
+          <view class="blocks-title-text">答题卡</view>
+          <view class="blocks-title-total">（共5题）</view>
+        </view>
+        <view class="card-type">
+          <view class="card-type-item">
+            <view class="card-type-item-icon"></view>
+            <view class="card-type-item-text">对题</view>
+          </view>
+          <view class="card-type-item">
+            <view class="card-type-item-icon error"></view>
+            <view class="card-type-item-text">错题</view>
+          </view>
+        </view>
+      </view>
+      <view class="card-items">
+        <view class="card-item right">1</view>
+        <view class="card-item right">2</view>
+        <view class="card-item error">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+        <view class="card-item">3</view>
+      </view>
+    </view>
+  </van-popup>
+
+  <!--闯关失败、成功-->
+  <van-popup show="{{resultDialog}}"
+             round
+             close-on-click-overlay="{{false}}"
+             bind:close="handleCloseResult"
+             custom-class="result-wrap">
+    <view class="result-inner">
+      <view class="result-inner-bg {{isThrough ? '' : 'fail'}}"></view>
+      <view class="result-content">
+        <view class="result-title">{{isThrough ? '闯关成功' : '闯关失败'}}</view>
+        <view class="result-tips">共12题，全答对啦！</view>
+        <view class="result-btn-group">
+          <block wx:if="{{isThrough}}">
+            <view class="r-btn btn-line" bindtap="handleToErrDetail">查看解析</view>
+            <view class="r-btn btn-bg" bindtap="handleToCommonList">继续闯关</view>
+          </block>
+          <block wx:else>
+            <view class="r-btn r-btn1 btn-bg" bindtap="handleToCommonList">返回</view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </van-popup>
 </view>
 
-    <!--答题卡-->
-<van-popup show="{{ show }}"
-           bind:close="onClose"
-           position="bottom">
-  <view class="card-wrap">
-    <view class="card-title-wrap">
-      <view class="blocks-title">
-        <view class="blocks-title-icon"></view>
-        <view class="blocks-title-text">答题卡</view>
-        <view class="blocks-title-total">（共5题）</view>
-      </view>
-      <view class="card-type">
-        <view class="card-type-item">
-          <view class="card-type-item-icon"></view>
-          <view class="card-type-item-text">对题</view>
-        </view>
-        <view class="card-type-item">
-          <view class="card-type-item-icon error"></view>
-          <view class="card-type-item-text">错题</view>
-        </view>
-      </view>
-    </view>
-    <view class="card-items">
-      <view class="card-item right">1</view>
-      <view class="card-item right">2</view>
-      <view class="card-item error">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-      <view class="card-item">3</view>
-    </view>
-  </view>
-</van-popup>
+

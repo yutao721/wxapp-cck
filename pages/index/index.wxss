@@ -61,7 +61,7 @@
   border-radius: 3rpx;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -6rpx;
+  bottom: -14rpx;
 }
 
 /*tabs=========*/

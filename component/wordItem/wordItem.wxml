@@ -1,6 +1,6 @@
 <view class="word-list">
   <view class="word-list-follow" data-type="1" bindtap="handleFollow"></view>
-  <view class="word-list-img"></view>
+  <image class="word-list-img" src="{{imgPath}}icon_pdf.png"></image>
   <view class="word-list-info">
     <view class="word-list-title">中国建筑的科技与智慧.docx</view>
     <view class="word-list-time">

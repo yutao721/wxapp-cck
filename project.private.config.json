@@ -87,7 +87,7 @@
         {
           "name": "pk答题",
           "pathName": "pages/pkDetail/pkDetail",
-          "query": "",
+          "query": "type=-1",
           "scene": null
         },
         {

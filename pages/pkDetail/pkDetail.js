@@ -1,8 +1,11 @@
+const app = getApp();
 Page({
   data: {
     show: false,
     isAnswer: false,
-    isLast: false
+    isLast: false,
+    resultDialog: false,
+    isThrough: false
   },
 
 
@@ -33,9 +36,34 @@ Page({
     wx.navigateTo({ url: `/pages/pkResult/pkResult?type=${type}` })
   },
 
+  // 题目闯关
+  handleThrough() {
+    let isThrough = app.$util.randomBoolean();
+    console.log(isThrough);
+    this.setData({isThrough}, () => {
+      this.setData({ resultDialog: true })
+    })
+  },
+
+  // 回顾解析
+  handleToErrDetail() {
+    wx.redirectTo({
+      url: `/pages/errorDetail/errorDetail`
+    })
+  },
+
+  handleToCommonList() {
+    wx.redirectTo({
+      url: `/pages/commonList/commonList`
+    })
+  },
+
   setTitleByType(type) {
     let title = ''
     switch (type) {
+      case -1:
+        title = '题目闯关';
+        break;
       case 1:
         title = '答题PK';
         break;

@@ -26,7 +26,6 @@
 .word-list-img {
   width: 92rpx;
   height: 92rpx;
-  background-color: red;
   margin-right: 24rpx;
   flex-shrink: 0;
 }

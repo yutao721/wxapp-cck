@@ -14,7 +14,8 @@ const wxp = {};
 promisifyAll(wx, wxp);
 
 export class Util {
-  constructor() {}
+  constructor() {
+  }
 
   /**
    * @description 获取缓存值
@@ -136,7 +137,8 @@ export class Util {
         image
       })
       .then((res) => {
-        setTimeout(() => {}, duration);
+        setTimeout(() => {
+        }, duration);
       });
   }
 
@@ -247,7 +249,7 @@ export class Util {
   throttle(fn, interval) {
     let enterTime = 0; //触发的时间
     let gapTime = interval || 300; //间隔时间，如果interval不传，则默认300ms
-    return function() {
+    return function () {
       let context = this;
       let backTime = new Date(); //第一次函数return即触发的时间
       if (backTime - enterTime > gapTime) {
@@ -269,11 +271,11 @@ export class Util {
   debounce(fn, interval) {
     let timer;
     let gapTime = interval || 1000; //间隔时间，如果interval不传，则默认1000ms
-    return function() {
+    return function () {
       clearTimeout(timer);
       let context = this;
       let args = arguments; //保存此处的arguments，因为setTimeout是全局的，arguments不是防抖函数需要的。
-      timer = setTimeout(function() {
+      timer = setTimeout(function () {
         fn.call(context, args);
       }, gapTime);
     };
@@ -309,14 +311,14 @@ export class Util {
         typeof dateEnd == 'object' ? dateEnd : new Date(Number(dateEnd) * 1000);
     }
     let dateDiff = dateEnd.getTime() - dateBegin.getTime(); //时间差的毫秒数
-    let dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000)); //计算出相差天数
-    let leave1 = dateDiff % (24 * 3600 * 1000); //计算天数后剩余的毫秒数
-    let hours = Math.floor(leave1 / (3600 * 1000)); //计算出小时数
+    let dayDiff = Math.floor(dateDiff / ( 24 * 3600 * 1000 )); //计算出相差天数
+    let leave1 = dateDiff % ( 24 * 3600 * 1000 ); //计算天数后剩余的毫秒数
+    let hours = Math.floor(leave1 / ( 3600 * 1000 )); //计算出小时数
     //计算相差分钟数
-    let leave2 = leave1 % (3600 * 1000); //计算小时数后剩余的毫秒数
-    let minutes = Math.floor(leave2 / (60 * 1000)); //计算相差分钟数
+    let leave2 = leave1 % ( 3600 * 1000 ); //计算小时数后剩余的毫秒数
+    let minutes = Math.floor(leave2 / ( 60 * 1000 )); //计算相差分钟数
     //计算相差秒数
-    let leave3 = leave2 % (60 * 1000); //计算分钟数后剩余的毫秒数
+    let leave3 = leave2 % ( 60 * 1000 ); //计算分钟数后剩余的毫秒数
     let seconds = Math.round(leave3 / 1000);
     let allMinutes = dayDiff * 24 * 60 + hours * 60 + minutes;
     let allSeconds =
@@ -345,7 +347,7 @@ export class Util {
    */
   rpxToPx(rpx) {
     let systemInfo = wx.getSystemInfoSync();
-    return Number((rpx / 750) * systemInfo.windowWidth);
+    return Number(( rpx / 750 ) * systemInfo.windowWidth);
   }
 
   /**
@@ -417,4 +419,9 @@ export class Util {
       dateTimeNoSecond: `${y}-${m}-${d} ${h}:${minute}`
     };
   }
+
+  randomBoolean() {
+    return Math.random() >= 0.5;
+  }
+
 }
