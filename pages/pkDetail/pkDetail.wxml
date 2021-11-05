@@ -70,8 +70,8 @@
         <view class="nav-item-icon card"></view>
         <view class="nav-item-text">答题卡</view>
       </view>
-      <view class="nav-item">
-        <view class="nav-item-icon follow active"></view>
+      <view class="nav-item" bindtap="handleFollow">
+        <view class="nav-item-icon follow {{isFollow ? 'active' : ''}}"></view>
         <view class="nav-item-text">收藏</view>
       </view>
     </view>

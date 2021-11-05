@@ -80,6 +80,7 @@
     "van-popup": "@vant/weapp/popup/index",
     "van-sticky": "@vant/weapp/sticky/index",
     "van-toast": "@vant/weapp/toast/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-dialog": "@vant/weapp/dialog/index"
   }
 }

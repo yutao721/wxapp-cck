@@ -1,3 +1,5 @@
+import Tips from '../../utils/tip';
+
 const app = getApp();
 Page({
   data: {
@@ -5,9 +7,19 @@ Page({
     isAnswer: false,
     isLast: false,
     resultDialog: false,
-    isThrough: false
+    isThrough: false,
+    isFollow: false
   },
 
+  handleFollow() {
+    let isFollow = this.data.isFollow;
+    let title = `确定${isFollow ? '取消' : '加入'}收藏？`
+    Tips.confirm(title, {}, '温馨提示').then(() => {
+      this.setData({ isFollow: !isFollow }, () => {
+        Tips.success(`${isFollow ? '取消' : '收藏'}成功！`)
+      })
+    })
+  },
 
   handleConfirm() {
     // todo
@@ -40,7 +52,7 @@ Page({
   handleThrough() {
     let isThrough = app.$util.randomBoolean();
     console.log(isThrough);
-    this.setData({isThrough}, () => {
+    this.setData({ isThrough }, () => {
       this.setData({ resultDialog: true })
     })
   },
