@@ -56,7 +56,6 @@ Page({
   getList(page = 1) {
     let { activeTab } = this.data
     INDEX.getList(activeTab).then(res => {
-      console.log(res);
       let { rows: data, total } = res;
       let { list } = this.data;
       if (page == 1) list = [];
