@@ -1,3 +1,6 @@
+import { Staff } from '../../models/staff'
+
+const S = new Staff();
 const app = getApp();
 Page({
   data: {
@@ -19,15 +22,43 @@ Page({
         value: 4
       }
     ],
+    list: [],
     activeTab: 1
   },
 
   handleSwitchTab(e) {
     let { value } = e.currentTarget.dataset;
-    this.setData({ activeTab: value })
+    this.setData({ activeTab: value, list: [] }, () => {
+      this.getList()
+    })
   },
 
-  onLoad() {
+  async getInfoTypeList() {
+    let { data: tabs } = await S.getEmpTypeList();
+    if (tabs && tabs.length) {
+      tabs = tabs.map(item => {
+        return {
+          label: item.typeName,
+          value: item.id
+        }
+      })
+      this.setData({ tabs, activeTab: tabs[0].value })
+    }
+  },
+
+  getList() {
+    let { activeTab } = this.data
+    S.getList(activeTab).then(res => {
+      console.log(res);
+      let { rows: data, total } = res;
+      let { list } = this.data;
+      this.setData({ list: [...list, ...data] });
+    })
+  },
+
+  async onLoad() {
     app.changeTabbar();
+    await this.getInfoTypeList();
+    this.getList()
   }
 });

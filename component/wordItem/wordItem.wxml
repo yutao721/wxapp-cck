@@ -2,10 +2,10 @@
   <view class="word-list-follow" data-type="1" bindtap="handleFollow"></view>
   <image class="word-list-img" src="{{imgPath}}icon_pdf.png"></image>
   <view class="word-list-info">
-    <view class="word-list-title">中国建筑的科技与智慧.docx</view>
+    <view class="word-list-title">{{item.docName}}.{{item.docFormat}}</view>
     <view class="word-list-time">
-      <view class="time">2021-06-21</view>
-      <view class="tag">党训</view>
+      <view class="time">{{item.updateTime}}</view>
+      <view class="tag" wx:if="{{item.docTag}}">{{item.docTag}}</view>
     </view>
   </view>
 </view>

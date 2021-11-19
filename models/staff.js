@@ -1,18 +1,14 @@
-import * as I from '../config/index';
+import * as I from '../config/staff';
 import { Http } from '../lib/http';
 
 const app = getApp();
 
-export class Index extends Http {
+export class Staff extends Http {
   constructor() {
     super();
   }
 
-  getBannerList(data) {
-    return this.request(I.getBannerList, 'GET', data);
-  }
-
-  getInfoTypeList(data) {
+  getEmpTypeList(data) {
     return this.request(I.getInfoTypeList, 'GET', data);
   }
 

@@ -125,6 +125,12 @@
           "pathName": "pages/follow/follow",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "员工",
+          "pathName": "pages/staff/staff",
+          "query": "",
+          "scene": null
         }
       ]
     }

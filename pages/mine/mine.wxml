@@ -5,7 +5,7 @@
     <view class="block">
       <view class="info-wrap">
         <view class="info-inner">
-          <view class="avatar"></view>
+          <view class="avatar" bindtap="getLogin"></view>
           <view class="info">
             <view class="name">开心就好</view>
             <view class="work">市场部总监</view>
@@ -50,6 +50,6 @@
     </view>
 
   </view>
-
+  <authentication bind:authen="authentication" id="authen" isShow="{{ isShowAuthen }}" authenticationType="wechat" />
   <tabbar active="{{currentPage}}"></tabbar>
 </view>

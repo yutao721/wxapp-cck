@@ -4,35 +4,8 @@ const INDEX = new Index();
 const app = getApp();
 Page({
   data: {
-    items: [
-      {
-        label: '全新',
-        value: ''
-      },
-      {
-        label: '最新',
-        value: 'id'
-      },
-      {
-        label: '热帖',
-        value: 'count'
-      }
-    ],
-    status: '',
-    keyword: '',
     list: [],
-    banner: [
-      {
-        url: 'https://sgs-test.oss-cn-hangzhou.aliyuncs.com/uploads/banner/202008/5f334e64c5f98.png'
-      },
-      {
-        url: 'https://sgs-test.oss-cn-hangzhou.aliyuncs.com/uploads/banner/202101/6000f944d56ac.jpg'
-      },
-
-      {
-        url: 'https://sgs-test.oss-cn-hangzhou.aliyuncs.com/uploads/banner/202008/5f334e64c5f98.png'
-      }
-    ],
+    banner: [],
     tabs: [
       {
         label: '企业动态',
@@ -56,48 +29,53 @@ Page({
 
   handleSwitchTab(e) {
     let { value } = e.currentTarget.dataset;
-    this.setData({ activeTab: value })
-  },
-
-  handleInput(v) {
-    this.setData({ keyword: v.detail.value })
-  },
-
-  handleStatus(e) {
-    let { value } = e.currentTarget.dataset;
-    this.setData({ status: value, list: [] }, () => {
-      this.getList(1)
+    this.setData({ activeTab: value, list: [] }, () => {
+      this.getList()
     })
   },
 
-  submit() {
-    this.getList(1)
+  async getInfoTypeList() {
+    let { data: tabs } = await INDEX.getInfoTypeList();
+    if (tabs && tabs.length) {
+      tabs = tabs.map(item => {
+        return {
+          label: item.typeName,
+          value: item.id
+        }
+      })
+      this.setData({ tabs, activeTab: tabs[0].value })
+    }
   },
 
-  getList(page = 1) {
-    let { keyword, status } = this.data
-    let params = { page, keyword, status }
-    INDEX.getList(params).then(res => {
-      let { data, total, per_page } = res.data;
+  async getBannerList() {
+    let { data } = await INDEX.getBannerList();
+    this.setData({ banner: data })
+  },
+
+
+  getList() {
+    let { activeTab } = this.data
+    INDEX.getList(activeTab).then(res => {
+      console.log(res);
+      let { rows: data, total } = res;
       let { list } = this.data;
       data.length && data.forEach(item => {
         item.time = app.$util.serDate2Time(item.addtime).date
       })
-      if (page == 1) list = [];
-      this.setData({
-        list: [...list, ...data],
-        page,
-        isMore: total > page * per_page
-      });
+      this.setData({ list: [...list, ...data] });
     })
   },
-  onLoad(options) {
+
+
+  async onLoad(options) {
     app.changeTabbar();
-    this.getList()
+
   },
 
-  onShow() {
-
+  async onShow() {
+    await this.getInfoTypeList()
+    await this.getBannerList()
+    this.getList()
   },
 
   onReachBottom() {

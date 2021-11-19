@@ -9,43 +9,25 @@
     </view>
   </view>
 
-  <view class="word-lists" wx:if="{{activeTab == 'word'}}">
-    <wordItem></wordItem>
-    <wordItem></wordItem>
+  <view class="word-lists" wx:if="{{activeTab == 'doc'}}">
+    <block wx:for="{{list}}" wx:key="unique">
+      <wordItem item="{{item}}"></wordItem>
+    </block>
   </view>
 
   <view class="video-lists" wx:if="{{activeTab == 'video'}}">
-    <view class="video-list">
-      <view class="video-list-img"></view>
+    <view class="video-list" wx:for="{{list}}" wx:key="unique">
+      <view class="video-list-img">
+        <image class="video-list-img-img" src="{{item.docCoverUrl}}"></image>
+      </view>
       <view class="video-list-info">
-        <view class="video-list-title">党领导民政事业的历史经验与启示</view>
+        <view class="video-list-title">{{item.docName}}</view>
         <view class="word-list-time time-v">
-          <view class="time">2021-06-21</view>
-          <view class="tag">党训</view>
+          <wxs src="../../utils/utils.wxs" module="tools"/>
+          <view class="time">{{tools.date2Word(item.updateTime)}}</view>
+          <view class="tag" wx:if="{{item.docTag}}">{{item.docTag}}</view>
         </view>
       </view>
-
-    </view>
-    <view class="video-list">
-      <view class="video-list-img"></view>
-      <view class="video-list-info">
-        <view class="video-list-title">党领导民启示</view>
-        <view class="word-list-time time-v">
-          <view class="time">2021-06-21</view>
-          <view class="tag">党训</view>
-        </view>
-      </view>
-    </view>
-    <view class="video-list">
-      <view class="video-list-img"></view>
-      <view class="video-list-info">
-        <view class="video-list-title">党领导民政事业的历史经验与启示</view>
-        <view class="word-list-time time-v">
-          <view class="time">2021-06-21</view>
-          <view class="tag">党训</view>
-        </view>
-      </view>
-
     </view>
   </view>
 

@@ -26,30 +26,33 @@ export class Global extends Http {
         _util.showToast('授权失败');
         return false;
       }
-      _this
-        .request(L.USER_AUTH, 'POST', {
-          encryptedData: e.encryptedData,
-          iv: e.iv,
-          userInfo: e.userInfo,
-          signature: e.signature
-        })
-        .then((res) => {
-          console.zxm('用户授权', res);
-          let resData = res.data;
-          _util.setCache('TOKEN', resData.meta.access_token);
-          _util.setCache('USERINFO', resData);
-          _util.getCurrentPage().setData({
-            isLogin: true,
-            userInfo: {
-              avatar: resData.avatar_url,
-              nickname: resData.nickname,
-              userId: resData.id,
-              status: resData.status
-            }
+      wx.login({
+        success(res) {
+          _this.request(L.USER_AUTH, 'POST', {
+            code: res.code,
+            encryptedData: e.encryptedData,
+            iv: e.iv,
+            rawData: e.rawData,
+            signature: e.signature
+          }).then((res) => {
+            console.log('用户授权', res);
+            let resData = res.data;
+            _util.setCache('TOKEN', res.msg);
+            _util.setCache('USERINFO', e.userInfo);
+            // _util.getCurrentPage().setData({
+            //   isLogin: true,
+            //   userInfo: {
+            //     avatar: resData.avatar_url,
+            //     nickname: resData.nickname,
+            //     userId: resData.id,
+            //     status: resData.status
+            //   }
+            // });
+            _util.showToast('登录成功!');
+            resolve(res);
           });
-          _util.showToast('登录成功!');
-          resolve(res);
-        });
+        }
+      })
     });
   }
 

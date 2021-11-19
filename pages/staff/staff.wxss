@@ -6,7 +6,7 @@
 /*tabs*/
 .tabs {
   background: #FFF;
-  height: 128rpx;
+  height: 100rpx;
   display: flex;
   align-items: center;
 }
@@ -47,14 +47,14 @@
 .list {
   display: flex;
   align-items: center;
-  height: 160rpx;
   padding: 32rpx 0;
   margin: 0 28rpx;
-  border-top: 1rpx solid #EAEAEA;
+  border-bottom: 1rpx solid #EAEAEA;
 }
 
-.list:first-of-type {
-  border: none;
+
+.list-info {
+  flex: 1;
 }
 
 .list-title {
@@ -72,6 +72,12 @@
   font-size: 26rpx;
   color: #999999;
   margin-top: 32rpx;
+  display: flex;
+  align-items: center;
+}
+
+.list-sub text {
+  margin-right: 20rpx;
 }
 
 .list-img {
@@ -81,6 +87,13 @@
   background-color: red;
   flex: 240rpx 0 0;
   margin-left: 38rpx;
+}
+
+.list-img-img {
+  width: 240rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+  flex: 240rpx 0 0;
 }
 
 /*lists=========*/

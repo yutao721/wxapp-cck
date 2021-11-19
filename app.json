@@ -81,6 +81,7 @@
     "van-sticky": "@vant/weapp/sticky/index",
     "van-toast": "@vant/weapp/toast/index",
     "van-icon": "@vant/weapp/icon/index",
-    "van-dialog": "@vant/weapp/dialog/index"
+    "van-dialog": "@vant/weapp/dialog/index",
+    "authentication": "/component/authentication/authentication"
   }
 }

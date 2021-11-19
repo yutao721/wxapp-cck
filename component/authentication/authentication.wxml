@@ -1,0 +1,15 @@
+<van-popup show="{{isShow}}"
+           round
+           close-on-click-overlay="{{false}}"
+           bind:close="handleCloseResult"
+           custom-class="result-wrap">
+  <view class="result-inner">
+    <view class="result-content">
+      <view class="result-title">楚晟科</view>
+      <view class="result-btn-group">
+        <view class="r-btn r-btn1 btn-bg" bindtap="toAuthentication">微信登录</view>
+        <view class="r-btn r-btn1 btn-line" bindtap="cancel">暂不登录</view>
+      </view>
+    </view>
+  </view>
+</van-popup>

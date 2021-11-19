@@ -109,7 +109,12 @@
   width: 336rpx;
   height: 224rpx;
   border-radius: 16rpx 16rpx 0 0;
-  background: red;
+}
+
+.video-list-img-img {
+  width: 336rpx;
+  height: 224rpx;
+  border-radius: 16rpx 16rpx 0 0;
 }
 
 .video-list-info {

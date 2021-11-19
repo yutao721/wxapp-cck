@@ -2,8 +2,12 @@
   <import src="../../wxParse/wxParse.wxml"/>
 
   <view class="info">
-    <view class="name">{{detail.title}}</view>
-    <view class="time">2020.09.06 12:20 235人浏览</view>
+    <view class="name">{{detail.infoTitle}}</view>
+    <view class="time">
+      <text>{{detail.updateTime}}</text>
+      <text>{{detail.viewCount}}人浏览</text>
+    </view>
+
   </view>
   <view class="desc">
     <view class="detail-cont">
