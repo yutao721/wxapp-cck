@@ -53,12 +53,13 @@ Page({
   },
 
 
-  getList() {
+  getList(page = 1) {
     let { activeTab } = this.data
     INDEX.getList(activeTab).then(res => {
       console.log(res);
       let { rows: data, total } = res;
       let { list } = this.data;
+      if (page == 1) list = [];
       data.length && data.forEach(item => {
         item.time = app.$util.serDate2Time(item.addtime).date
       })

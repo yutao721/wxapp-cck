@@ -1,0 +1,26 @@
+<wxs module="utils">
+  var REGEXP = getRegExp('^\d+(\.\d+)?$');
+
+  function addUnit(value) {
+    if (value == null) {
+      return undefined;
+    }
+    return REGEXP.test('' + value) ? value + 'px' : value;
+  }
+
+  module.exports = {
+    addUnit: addUnit
+  };
+
+</wxs>
+
+
+<view class="wr-class empty" style="background-color: {{backColor}}">
+  <view class="empty-content">
+    <image class="content-img" src="{{src}}" mode="aspectFit"/>
+    <view class="content-text" style="font-size: {{ utils.addUnit(textSize) }}; color: {{textColor}}">
+      暂无数据
+      <slot/>
+    </view>
+  </view>
+</view>

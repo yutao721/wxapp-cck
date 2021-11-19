@@ -46,19 +46,24 @@ Page({
     }
   },
 
-  getList() {
+  getList(page = 1) {
     let { activeTab } = this.data
     S.getList(activeTab).then(res => {
       console.log(res);
       let { rows: data, total } = res;
       let { list } = this.data;
+      if (page == 1) list = [];
       this.setData({ list: [...list, ...data] });
     })
   },
 
   async onLoad() {
     app.changeTabbar();
+  },
+
+  async onShow() {
     await this.getInfoTypeList();
     this.getList()
   }
+
 });

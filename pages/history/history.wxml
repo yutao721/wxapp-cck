@@ -31,4 +31,6 @@
     </view>
   </view>
 
+  <empty wx:if="{{!list.length}}"></empty>
+
 </view>

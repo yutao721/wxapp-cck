@@ -1,0 +1,26 @@
+.empty {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.empty .empty-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.empty .empty-content .content-img {
+  width: 480rpx;
+  height: 480rpx;
+}
+
+.empty .empty-content .content-text {
+  margin-top: 10rpx;
+  text-align: center;
+  color: #969799;
+  font-size: 24rpx;
+  line-height: 30rpx;
+}

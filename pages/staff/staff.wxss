@@ -1,6 +1,9 @@
+page {
+padding-bottom: 200rpx;
+}
+
 .wrap {
   background: #FFFFFF;
-  padding-bottom: 200rpx;
 }
 
 /*tabs*/
